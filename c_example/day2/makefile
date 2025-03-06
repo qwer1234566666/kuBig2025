@@ -1,4 +1,4 @@
-TARGET = absolute leafYear passFail grade grade2
+TARGET = absolute leafYear passFail grade grade2 posZeroNeg bigLetter one2Ten one2tensum multiplyTable ascii
 
 all : ${TARGET}
 
@@ -7,6 +7,12 @@ leafYear : $@
 passFail : $@
 grade : $@
 grade2 :$@
+posZeroNeg : $@
+bigLetter : $@
+one2Ten : $@
+one2tensum : $@
+multiplyTable : $@
+ascii : $@
 
 clean :
 	rm ${TARGET}
