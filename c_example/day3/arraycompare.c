@@ -1,5 +1,5 @@
 //원소의 같음을 비교
-#include <stdio.h>>
+#include <stdio.h>
 
 int main(void)
 {
