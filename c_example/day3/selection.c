@@ -1,5 +1,5 @@
 //랜덤 함수 20개 프린트
-//정렬 후 프린트/
+//선택정렬 후 프린트/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

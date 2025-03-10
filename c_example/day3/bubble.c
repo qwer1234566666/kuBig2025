@@ -1,3 +1,5 @@
+//랜덤 함수 20개 프린트
+//버블정렬 후 프린트/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
