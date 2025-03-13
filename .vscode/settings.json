@@ -9,5 +9,5 @@
     },
     "C_Cpp.errorSquiggles": "disabled",
     "ros.distro": "humble",
-    "cmake.sourceDirectory": "/home/kubig2025/c_example/sqlQuery"
+    "cmake.sourceDirectory": "/home/yjh/kubig2025"
 }
