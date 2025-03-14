@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 project(MainProject)
 
 # 내부 CMakeLists.txt 포함
-include(/home/yjh/kubig2025/c_example/sqlQuery/CMakeLists.txt)
-include(c_example/day1/CMakeLists.txt)
-include(c_example/day2/CMakeLists.txt)
-include(c_example/day3/CmakeLists.txt)
+
+add_subdirectory(c_example/sqlQuery)
+add_subdirectory(c_example/day1)
+add_subdirectory(c_example/day2)
+add_subdirectory(c_example/day3)
