@@ -29,7 +29,7 @@ int main(void)
     }
     else
     {
-        printf("%d 숫자를 못 찾았다. 인덱스는  %d 이다 \n", value);
+        printf("%d 숫자를 못 찾았다.\n", value);
     }
     return 0;
 }

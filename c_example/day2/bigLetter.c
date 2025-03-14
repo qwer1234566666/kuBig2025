@@ -22,7 +22,7 @@ int main(void){
     }else if ('a'<= ch && ch <='z'){
         printf("%c는 소문자 입니다.",ch);
     }else{
-        printf("%c는 영문자가 아닙니다.\n");
+        printf("%c는 영문자가 아닙니다.\n",ch);
     }
     return 0;
 
