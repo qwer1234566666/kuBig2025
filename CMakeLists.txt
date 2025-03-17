@@ -5,5 +5,6 @@ project(MainProject)
 
 add_subdirectory(c_example/sqlQuery)
 add_subdirectory(c_example/day1)
-add_subdirectory(c_example/day2)
+add_subdirectory(c_example/day2)  
 add_subdirectory(c_example/day3)
+add_subdirectory(c_example/bowling)
