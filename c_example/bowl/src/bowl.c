@@ -12,15 +12,13 @@ void print_hit(int x, int y);
 int main()
 {
     int i, j;
-    
+
     Score s[12] = {{0, }, };
     
     for (i = 1; i < 12; i++) {
-//aaa:
         printf("%d회 1차 : ", i);
         scanf("%d", &s[i].p1);
  
-//bbb:
         if (s[i].p1 < 10) {
             if (i == 11 && s[10].p1 != 10) {}
             else {
@@ -59,11 +57,11 @@ int main()
  
         for (j = 1; j <= i; j++) print_hit(s[j].p1, s[j].p2);    printf("\n");
  
-        for (j = 1; j <= i; j++) printf("   %3d   ", s[j].total);    printf("\n");
+        for (j = 1; j <= i; j++) printf("   %3d   ", s[j].total); printf("\n");
         
         if (i == 10 && s[i].p1 + s[i].p2 < 10) break;
     }
- 
+
     return 0;
 }
  
