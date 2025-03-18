@@ -6,7 +6,9 @@
         "stdlib.h": "c",
         "string.h": "c",
         "mysql.h": "c",
-        "bowlingsql.h": "c"
+        "bowlingsql.h": "c",
+        "dotenv.h": "c",
+        "io.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "ros.distro": "humble",
