@@ -8,7 +8,8 @@
         "mysql.h": "c",
         "bowlingsql.h": "c",
         "dotenv.h": "c",
-        "io.h": "c"
+        "io.h": "c",
+        "uart0.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "ros.distro": "humble",

@@ -24,7 +24,6 @@ int main()
 
     sei(); // 전역 인터럽트 허용
     char cData;
-    char buffer;
 
     printf("Hi, I'm Atmega128");
     lcdGotoXY(0, 0);
@@ -38,10 +37,8 @@ int main()
         while (UCSR0A & (1 << RXC0))
         {
             // TODO : 4 개 문자 이상 못 받아 오는 문제 버퍼 문제 해결.
-            //cData = fgetc(stdin);
-            // lcdDataWrite(cData);
-            scanf("%s",buffer);
-            lcdPrint(buffer);
+            cData = fgetc(stdin);
+            lcdDataWrite(cData);
             cursor++;
             if (cursor == 16)
                 lcdGotoXY(0, 1);
