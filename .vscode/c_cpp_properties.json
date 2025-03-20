@@ -10,6 +10,7 @@
             "includePath": [
                 "/home/yjh/kubig2025/src",
                 "/home/yjh/kubig2025/lib/lcd",
+                "/home/yjh/kubig2025/lib/uart1",
                 ""
             ],
             "browse": {
@@ -17,6 +18,7 @@
                 "path": [
                     "/home/yjh/kubig2025/src",
                     "/home/yjh/kubig2025/lib/lcd",
+                    "/home/yjh/kubig2025/lib/uart1",
                     ""
                 ]
             },
