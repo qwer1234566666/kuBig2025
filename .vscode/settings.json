@@ -9,7 +9,8 @@
         "bowlingsql.h": "c",
         "dotenv.h": "c",
         "io.h": "c",
-        "uart0.h": "c"
+        "uart0.h": "c",
+        "interrupt.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "ros.distro": "humble",
