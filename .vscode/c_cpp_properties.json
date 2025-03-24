@@ -10,6 +10,9 @@
             "includePath": [
                 "/home/yjh/kubig2025/src",
                 "/home/yjh/kubig2025/lib/lcd",
+                "/home/yjh/kubig2025/lib/at25",
+                "/home/yjh/kubig2025/lib/avr-uart",
+                "/home/yjh/kubig2025/lib/sht20",
                 "/home/yjh/kubig2025/lib/uart0",
                 ""
             ],
@@ -18,6 +21,9 @@
                 "path": [
                     "/home/yjh/kubig2025/src",
                     "/home/yjh/kubig2025/lib/lcd",
+                    "/home/yjh/kubig2025/lib/at25",
+                    "/home/yjh/kubig2025/lib/avr-uart",
+                    "/home/yjh/kubig2025/lib/sht20",
                     "/home/yjh/kubig2025/lib/uart0",
                     ""
                 ]
