@@ -451,7 +451,33 @@ void lcdPrint(char *data)
     // print data
     for (i = 0; data[i] != '\0'; i++)
     {
-        lcdDataWrite(data[i]);
+        lcdDataWrite(data[i]);void lcdPrintData(char *data, uint8_t nBytes)
+        {
+            register uint8_t i;
+        
+            // check to make sure we have a good pointer
+            if (!data)
+                return;
+        
+            // print data
+            for (i = 0; i < nBytes; i++)
+            {
+                lcdDataWrite(data[i]);
+            }
+        }
+        
+        void lcdPrint(char *data)
+        {
+            register uint8_t i;
+        
+            // check to make sure we have a good pointer
+            if (!data)
+                return;
+        
+            // print data
+            for (i = 0; data[i] != '\0'; i++)
+            {
+                lcdDataWrite(data[i]);
     }
 }
 
