@@ -1,0 +1,1 @@
+savedcmd_/home/yjh/kuBig2025/raspberrypi/module/switch_interrupt/switch_interrupt.mod := printf '%s\n'   switch_interrupt.o | awk '!x[$$0]++ { print("/home/yjh/kuBig2025/raspberrypi/module/switch_interrupt/"$$0) }' > /home/yjh/kuBig2025/raspberrypi/module/switch_interrupt/switch_interrupt.mod
