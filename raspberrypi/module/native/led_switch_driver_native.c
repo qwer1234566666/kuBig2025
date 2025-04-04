@@ -7,24 +7,26 @@
 int main(void)
 {
     int fd;
-    char buf[16] = {0};
+    char buf[4] = {0};
     fd = open("/dev/led_switch_driver", O_RDWR);
     if (fd < 0)
     {
         printf("driver open fail\n");
         return -1;
     }
-    
-    for (int i = 0; i < 20; ++i)
+
+    for (int i = 0; i < 4; ++i)
     {
-        read(fd, &buf, 16);
+        read(fd, &buf, 4);
         printf("sw1: %d, sw2: %d, sw3: %d, sw4: %d\n", buf[0], buf[1], buf[2], buf[3]);
-        
-        // 스위치 상태를 LED로 반영
-        write(fd, &buf, 16);
         sleep(1);
     }
-    
+    for (int i = 0; i < 4; ++i)
+    {
+        buf[i] = 1;
+        write(fd, &buf, 4);
+        sleep(1);
+    }
     close(fd);
     return 0;
 }
