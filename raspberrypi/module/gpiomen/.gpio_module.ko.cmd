@@ -1,0 +1,1 @@
+savedcmd_/home/yjh/kuBig2025/raspberrypi/module/gpiomen/gpio_module.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /home/yjh/kuBig2025/raspberrypi/module/gpiomen/gpio_module.ko /home/yjh/kuBig2025/raspberrypi/module/gpiomen/gpio_module.o /home/yjh/kuBig2025/raspberrypi/module/gpiomen/gpio_module.mod.o;  true
