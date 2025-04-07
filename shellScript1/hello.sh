@@ -86,8 +86,3 @@ case $fruit in
     *) echo "알 수 없음" ;;
 esac
 
-
-
-
-
-
