@@ -9,30 +9,12 @@
             "name": "PlatformIO",
             "includePath": [
                 "/home/yjh/kubig2025/src",
-                "/home/yjh/kubig2025/lib/dht11",
-                "/home/yjh/kubig2025/lib/clcd",
-                "/home/yjh/kubig2025/lib/i2c",
-                "/home/yjh/kubig2025/lib/avr-uart",
-                "/home/yjh/kubig2025/lib/at25",
-                "/home/yjh/kubig2025/lib/lcd",
-                "/home/yjh/kubig2025/lib/sht20",
-                "/home/yjh/kubig2025/lib/uart",
-                "/home/yjh/kubig2025/lib/uart copy",
                 ""
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
                     "/home/yjh/kubig2025/src",
-                    "/home/yjh/kubig2025/lib/dht11",
-                    "/home/yjh/kubig2025/lib/clcd",
-                    "/home/yjh/kubig2025/lib/i2c",
-                    "/home/yjh/kubig2025/lib/avr-uart",
-                    "/home/yjh/kubig2025/lib/at25",
-                    "/home/yjh/kubig2025/lib/lcd",
-                    "/home/yjh/kubig2025/lib/sht20",
-                    "/home/yjh/kubig2025/lib/uart",
-                    "/home/yjh/kubig2025/lib/uart copy",
                     ""
                 ]
             },
