@@ -4,10 +4,12 @@
 
 void initQueue(Queue *pq, int size){
     pq->pArr = malloc(sizeof(int)*size);
-    assert(pq->pArr != NULL);
-    pq->size = size;
+    //pq->pArr != NULL;
+    assert(pq->pArr );
     
-    pq->front = pq->rear = 0;
+    pq->size = size;
+    pq->front = 0;
+    pq->rear = 0;
 }
 
 void cleanupQueue(Queue *pq){
@@ -24,8 +26,8 @@ void push(Queue *pq, int data){
 int pop(Queue *pq){
     assert(pq->front != pq->rear);
 
-    int index = pq->front;
+    int i = pq->front;
     ++pq->front;
-    return pq->pArr[index];
+    return pq->pArr[i];
 
 }

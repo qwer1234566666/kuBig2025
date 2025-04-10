@@ -6,7 +6,6 @@ typedef struct{
     // int array[QUEUESIZE];
     int *pArr;
     int size;
-
     int front;
     int rear;
 } Queue;

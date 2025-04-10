@@ -9,7 +9,8 @@ void initQueue(Queue *pq, int size, int eleSize){
     pq->eleSize = eleSize;
     pq->size = size;
     
-    pq->front = pq->rear = 0;
+    pq->front = 0;
+    pq->rear = 0;
 }
 
 void cleanupQueue(Queue *pq){
@@ -27,9 +28,9 @@ void push(Queue *pq, const void *pData){
 void pop(Queue *pq, void *pData){
     assert(pq->front != pq->rear);
 
-    int index = pq->front;
+    int i = pq->front;
     ++pq->front;
     // return pq->pArr[index];
-    memcpy(pData, (unsigned char *)pq->pArr + pq->eleSize * index, pq->eleSize);
+    memcpy(pData, (unsigned char *)pq->pArr + pq->eleSize * i, pq->eleSize);
 
 }
