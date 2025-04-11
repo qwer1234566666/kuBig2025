@@ -1,40 +1,37 @@
 #include "stack.h"
-#include <stdlib.h>
-#include <assert.h>
+//#include <cstdlib>
+#include <cassert>
+#include <cstdio>
 
-void initStack(Stack *ps, int size){
-    ps->pArr = (int *)malloc(sizeof(int)*size);
-    assert(ps->pArr != NULL);//NULl대비
-    ps->size = size;
-    ps->tos = 0;
+Stack::Stack(int size){
+    //this->pArr = (int *)malloc(sizeof(int)*size);
+    this->pArr = new int(size);
+    assert(this->pArr );
+    this->size = size;
+    this->tos = 0;
 }
 
-//cleanup
-void cleanupStack(Stack *ps){
-    free(ps->pArr);
+Stack::~Stack(){
+    //free(this->pArr);
+    delete[] this->pArr;
 }
 
 
-void push(Stack *ps, int data){
-    //full 예외처리
-    // if(ps->tos >= STACKSIZE ){
-    //     fprintf(stderr, "stack is full.\n");
-    //     exit(1);
-    // }
-    assert(ps->tos != ps->size);
+void Stack::push(int data){
+    assert(this->tos != this->size);
 
-    ps->pArr[ps->tos] = data;
-    ++ps->tos;
+    this->pArr[this->tos] = data;
+    ++this->tos;
 }
 
-int pop(Stack *ps){
+int Stack::pop(){
     //empty 예외처리
-    // if (ps->tos <= 0){
+    // if (this->tos <= 0){
     //     fprintf(stderr, "stack is empty.\n");
     //     exit(2);
     // }
-    assert(ps->tos != 0);
+    assert(this->tos != 0);
 
-    --ps->tos;
-    return ps->pArr[ps->tos];
+    --this->tos;
+    return this->pArr[this->tos];
 }

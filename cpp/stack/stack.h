@@ -1,19 +1,21 @@
-// #pragma once
 #ifndef STACK_H
 #define STACK_H
-// #define STACKSIZE 100
 
-typedef struct stack {
-//    int array[STACKSIZE];
+class Stack {
+private:    //implementation
     int *pArr;
     int size;
     int tos;
-} Stack;
 
-void initStack(Stack *ps, int size);
-void cleanupStack(Stack *ps);
-void push(Stack *ps, int data);
-int pop(Stack *ps);
-
+public:     //interface
+    //void initStack(int size);
+    //void cleanupStack();
+    Stack(int size);   //constructor
+    ~Stack();     //destructor
+    
+    void push(int data);
+    int pop();
+    
+};
 
 #endif
