@@ -5,7 +5,6 @@ class Rational {
 private:
     int num;
     int den;
-    void reduce(); // 약분
 
 public:
     Rational(int num , int den);
