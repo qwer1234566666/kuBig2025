@@ -1,10 +1,11 @@
-#ifndef COMPLEX_H
-#define COMPLEX_H
+#ifndef RATIONAL_H
+#define RATIONAL_H
 
-class Rational{
+class Rational {
 private:
     int numerator;
     int denominator;
+    void reduce();  // 기약분수로 만드는 내부 함수
 
 public:
     Rational(int numerator, int denominator);
@@ -13,15 +14,18 @@ public:
     ~Rational();
 
     void operator=(const Rational &rr);
-
     bool operator==(const Rational &rr);
+
+    Rational operator+(const Rational &rr);
+    Rational operator-(const Rational &rr);
+    Rational operator*(const Rational &rr);
+    Rational operator/(const Rational &rr);
 
     double getRational();
     int getNumerator();
     int getDenominator();
     void setNumerator(int numerator);
     void setDenominator(int denominator);
-
 };
 
 #endif

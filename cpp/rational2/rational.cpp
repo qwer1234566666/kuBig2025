@@ -1,5 +1,5 @@
 #include <cassert>
-#include "complex.h"
+#include "rational.h"
 
 Rational::Rational(int numerator, int denominator)
 {
