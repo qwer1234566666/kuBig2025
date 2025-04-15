@@ -36,3 +36,17 @@ bool Complex::operator==(const Complex& rhs)
 {
     return this->re == rhs.re && this->im == rhs.im;
 }
+
+const Complex Complex::operator+(const Complex& rhs)
+{
+    Complex result(this->re + rhs.re, this->im + rhs.im);
+
+    return result;
+}
+
+const Complex Complex::operator-(const Complex& rhs)
+{
+    Complex result(this->re - rhs.re, this->im - rhs.im);
+
+    return result;
+}
