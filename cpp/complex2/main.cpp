@@ -12,7 +12,9 @@ int main()
 	c1 = c3;	//operator=(c1, c3) or c1.operator(c3)
 	//c1.operator=(&c3);
 
-	if(c1.real() == c3.real() && c1.imag() == c3.imag()){
+
+	//if(c1.real() == c3.real() && c1.imag() == c3.imag()){
+	if(c1 == c3){	//operator==(c1,c3)or c1.operator==(3)
 		std::cout << "c1 and c3 are equal" << std::endl;
 	}else{
 		std::cout << "c1 and c3 are not equal" << std::endl;
