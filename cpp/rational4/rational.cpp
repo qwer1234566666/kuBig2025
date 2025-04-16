@@ -1,15 +1,15 @@
-#include <iostream>
 #include "rational.h"
-
-std::ostream& operator<<(std::ostream& out, const Rational& rhs)
-{
-    return out << "(" << rhs.num_ << "," << rhs.den_ << "i)";
-}
+#include <cassert>
 
 Rational::Rational(double num, double den)
+: num_(num), den_(den)
 {
-    num_ = num;
-    den_ = den;
+    assert(den );
+}
+
+/*std::ostream& operator<<(std::ostream& out, const Rational& rhs)
+{
+    return out << "(" << rhs.num_ << "," << rhs.den_ << "i)";
 }
 
 Rational& Rational::operator+=(const Rational& rhs)
@@ -60,4 +60,4 @@ Rational Rational::operator++(int )
     num_ += 1.0;
 
     return tmp;
-}
+}*/
