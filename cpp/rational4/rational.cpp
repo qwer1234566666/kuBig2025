@@ -1,63 +1,60 @@
 #include "rational.h"
 #include <cassert>
+#include "gcd.h"
+
+std::ostream& operator<<(std::ostream& out, const Rational& rhs)
+{
+    return out << rhs.num_ << "/" << rhs.den_;
+}
+
+void Rational::reduce()
+{
+    int g = gcd(num_, den_);
+    num_ = num_/ g;
+    den_ = den_/ g;
+}
 
 Rational::Rational(double num, double den)
 : num_(num), den_(den)
 {
     assert(den );
+
+    this->reduce();
 }
 
-/*std::ostream& operator<<(std::ostream& out, const Rational& rhs)
-{
-    return out << "(" << rhs.num_ << "," << rhs.den_ << "i)";
-}
-
-Rational& Rational::operator+=(const Rational& rhs)
-{
-    num_ += rhs.num_;
-    den_ += rhs.den_;
-
-    return *this;
-}
-
-bool Rational::operator==(const Rational& rhs)
+bool Rational::operator==(const Rational& rhs) const
 {
     return num_ == rhs.num_ && den_ == rhs.den_;
 }
 
-bool Rational::operator!=(const Rational& rhs)
+bool Rational::operator!=(const Rational& rhs) const
 {
-    // return !(*this == rhs);
     return !this->operator==(rhs);
-    
-    //return num_ != rhs.num_ || den_ != rhs.den_;
 }
 
-const Rational Rational::operator+(const Rational& rhs)
+const Rational Rational::operator+(const Rational& rhs) const
 {
-    Rational result(num_ + rhs.num_, den_ + rhs.den_);
+    Rational result(num_ * rhs.den_ + rhs.num_ * den_, den_ * rhs.den());
 
     return result;
 }
 
-const Rational Rational::operator-(const Rational& rhs)
+int Rational::num() const
 {
-    Rational result(num_ - rhs.num_, den_ - rhs.den_);
-
-    return result;
+    return num_;
 }
 
-Rational& Rational::operator++()
+int Rational::den() const
 {
-    num_ += 1.0;
-
-    return *this;
+    return den_;
 }
 
-Rational Rational::operator++(int )
+void Rational::num(int num)
 {
-    Rational tmp = *this;
-    num_ += 1.0;
+    num_ = num;
+}
 
-    return tmp;
-}*/
+void Rational::den(int den)
+{
+    den_ = den;
+}
