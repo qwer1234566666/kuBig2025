@@ -4,24 +4,26 @@
 const int Stack::STACK_SIZE = 100;
 
 Stack::Stack(int size)
-: pArr_(new int[size]), size_(size), tos_(0)
+: arr_(size), tos_(0)
 {
-    assert(pArr_ );
+    
 }
 
 Stack::~Stack()
 {
-    delete[] pArr_;
+    //delete[] pArr_;
 }
 
 int Stack::size() const
 {
-    return size_;
+    //return size_;
+    return arr_.size();
 }
 
 int Stack::remain() const
 {
-    return size_ - tos_;
+    //return size_ - tos_;
+    return arr_.size() - tos_;
 }
 
 bool Stack::isEmpty() const
@@ -31,14 +33,16 @@ bool Stack::isEmpty() const
 
 bool Stack::isFull() const
 {
-    return tos_ == size_;
+    //return tos_ == size_;
+    return tos_ == arr_.size();
 }
 
 void Stack::push(int data)
 {
     assert(!this->isFull());
 
-    pArr_[tos_] = data;
+    //pArr_[tos_] = data;
+    arr_[tos_] = data;
     ++tos_;
 }
 
@@ -47,5 +51,6 @@ int Stack::pop()
     assert(!this->isEmpty());
 
     --tos_;
-    return pArr_[tos_];
+    //return pArr_[tos_];
+    return arr_[tos_];
 }
