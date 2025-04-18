@@ -1,37 +1,37 @@
 #include<iostream>
-#include "queue.h"
-
+#include "stack.h"
 
 int main(){
+    Stack s1(10);
+    Stack s2;
 
-    Queue q1(10);
-    Queue q2;
+    s1.push(100);
+    s1.push(200);
+    s1.push(300);
 
-    q1.push(100);
-    q1.push(200);
-    q1.push(300);
+    std::cout << "s1 capacity : " << s1.size() << std::endl; 
+    std::cout << "s1 remain : " << s1.remain() << std::endl; 
 
-    while(!q1.empty()){
-        std::cout << q1.pop() << std::endl;
+    while (!s1.isEmpty()){
+        std::cout << s1.pop() << std::endl; 
     }
-    std::cout << "q1 size : " << q1.size() << std::endl;
-    std::cout << "q1 remain : " << q1.remain() << std::endl;
 
+    //s1 = s2;
+
+    
     /*
 
-    //printf("q1 1st pop() : %d\n", pop(&q1));
-   
-    std::cout << "q1 3rd pop() : " << q1.pop() << std::endl;
 
-    q2.push(900);
-    q2.push(800);
-    q2.push(700);
+    std::cout << "s1 1st pop() : " << s1.pop() << std::endl; 
+    std::cout << "s1 2nd pop() : " << s1.pop() << std::endl; 
+    std::cout << "s1 3rd pop() : " << s1.pop() << std::endl; 
     
-   
-    std::cout << "q2 2nd pop() : " << q2.pop() << std::endl;
-    std::cout << "q2 3rd pop() : " << q2.pop() << std::endl;*/
-
-    //q1.cleanupQueue();
-    //q2.cleanupQueue();
+    s2.push(900);
+    s2.push(800);
+    s2.push(700);
+    std::cout << "s2 1st pop() : " << s2.pop() << std::endl; 
+    std::cout << "s2 2nd pop() : " << s2.pop() << std::endl; 
+    std::cout << "s2 3rd pop() : " << s2.pop() << std::endl; 
+    */
     return 0;
 }
