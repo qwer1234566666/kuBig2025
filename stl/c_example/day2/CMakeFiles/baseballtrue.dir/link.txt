@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/baseballtrue.dir/baseballtrue.c.o -o baseballtrue 
