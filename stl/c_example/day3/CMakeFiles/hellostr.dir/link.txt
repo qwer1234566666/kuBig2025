@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/hellostr.dir/hellostr.c.o -o hellostr 
