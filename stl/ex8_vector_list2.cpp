@@ -15,7 +15,7 @@ int main()
     char temp;
     int grade;
 
-    FILE *fp = fopen("/home/aa/kuBig2025/stl/1000.txt", "r");
+    FILE *fp = fopen("/home/yjh/kubig2025/stl/10.txt", "r");
 
     while (fread(&temp, sizeof(char), 1, fp))
     {
