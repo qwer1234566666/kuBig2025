@@ -29,7 +29,7 @@ public:
 
 int main()
 {
-    ifstream file("/home/aa/kuBig2025/stl/10.txt");
+    ifstream file("/home/yjh/kubig2025/stl/10.txt");
     vector<Student> students;
 
     string name;
