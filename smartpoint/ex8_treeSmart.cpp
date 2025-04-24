@@ -24,10 +24,10 @@ void printTree(const shared_ptr<TreeNode> &node, int depth = 0)
 int main()
 {
     auto root = make_shared<TreeNode>(1);
-    root->chilren.push_back(make_shared<TreeNode>(2));
-    root->chilren.push_back(make_shared<TreeNode>(3));
-    root->chilren.push_back(make_shared<TreeNode>(4));
-    root->chilren[0]->chilren.push_back(make_shared<TreeNode>(5));
+    root->chilren.push_back(make_shared<TreeNode>(12));
+    root->chilren.push_back(make_shared<TreeNode>(13));
+    root->chilren.push_back(make_shared<TreeNode>(14));
+    root->chilren[0]->chilren.push_back(make_shared<TreeNode>(15));
     printTree(root);
     return 0;
 }
