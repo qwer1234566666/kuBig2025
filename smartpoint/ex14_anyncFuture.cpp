@@ -2,7 +2,7 @@
 #include <future>
 #include <iostream>
 #include <vector>
-//#include <thread>
+#include <thread>
 using namespace std;
 
 int slowAdd(int a, int b)
