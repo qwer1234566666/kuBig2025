@@ -11,7 +11,8 @@
         "io.h": "c",
         "uart0.h": "c",
         "interrupt.h": "c",
-        "delay.h": "c"
+        "delay.h": "c",
+        "unistd.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "ros.distro": "humble",
