@@ -1,3 +1,4 @@
+//다른 pc에서 내 pc로 보내는것이 가능한 코드
 #include <arpa/inet.h>
 #include <stdio.h>
 #include <stdlib.h>
