@@ -1,5 +1,4 @@
-import a02_keyword
-
+# import a02_keyward
 print("hello, world")
 
 def print_hello():
