@@ -6,17 +6,20 @@ def main():
 
     list_a.extend(list_b)
     print(list_a, list_b)
-    list_a = list_a *4
+
+    list_a = list_a * 4
     print(len(list_a))
 
     list_b.append(7)
     list_b.append(8)
     print(list_b)
-    list_b.insert(0,3)
+    list_b.insert(0, 3)
     print(list_b)
-    list_b.insert(4, 6.5)
+    list_b.insert(4, 6.5) # type: ignore
     print(list_b)
     list_b.remove(7)
+    print(list_b)
+    print(list_b.pop())
     print(list_b)
 
 if __name__ == "__main__":
