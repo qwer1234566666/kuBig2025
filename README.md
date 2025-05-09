@@ -24,7 +24,7 @@ IoT 빅데이터 SW 개발자 과정 C언어 수업 저장소
 ### gitHub 연동
 - git init >> .git 폴더 생성됨
 - git remote add origin 깃허브주소
-- https://github.com/PiriKIM/kuBig2025.git
+- https://github.com/qwer1234566666/kuBig2025.git
 - 깃허브 연동 위치 설정
 
 - git fetch origin >> git 내용을 가져옴
