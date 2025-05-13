@@ -1,0 +1,1 @@
+savedcmd_/home/yjh/kuBig2025/raspberrypi/module/module_exam.mod := printf '%s\n'   module_exam.o | awk '!x[$$0]++ { print("/home/yjh/kuBig2025/raspberrypi/module/"$$0) }' > /home/yjh/kuBig2025/raspberrypi/module/module_exam.mod

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/ex8_vector_list1.dir/ex8_vector_list1.cpp.o -o ex8_vector_list1 

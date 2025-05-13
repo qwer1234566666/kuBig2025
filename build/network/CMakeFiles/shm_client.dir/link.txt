@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/shm_client.dir/shm_client.c.o -o shm_client 

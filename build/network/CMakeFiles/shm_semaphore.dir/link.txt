@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/shm_semaphore.dir/shm_semaphore.c.o -o shm_semaphore 

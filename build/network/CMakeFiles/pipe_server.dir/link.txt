@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/pipe_server.dir/pipe_server.c.o -o pipe_server 

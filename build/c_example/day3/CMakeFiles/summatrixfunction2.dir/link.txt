@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/summatrixfunction2.dir/summatrixfunction2.c.o -o summatrixfunction2 

@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/staticLocal.dir/staticLocal.c.o -o staticLocal 

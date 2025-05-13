@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/mq_client.dir/mq_client.c.o -o mq_client 

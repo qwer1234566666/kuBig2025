@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/bow.dir/bow.c.o -o bow 

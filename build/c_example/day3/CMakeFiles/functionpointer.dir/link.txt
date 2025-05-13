@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/functionpointer.dir/functionpointer.c.o -o functionpointer 

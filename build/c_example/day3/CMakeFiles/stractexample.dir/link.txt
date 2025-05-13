@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/stractexample.dir/stractexample.c.o -o stractexample 

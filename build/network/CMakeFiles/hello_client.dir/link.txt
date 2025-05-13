@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/hello_client.dir/hello_client.c.o -o hello_client 

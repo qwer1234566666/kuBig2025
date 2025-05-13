@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -pedantic -g -g -O0 CMakeFiles/Array.dir/Array/array.cpp.o CMakeFiles/Array.dir/Array/main.cpp.o -o Array 

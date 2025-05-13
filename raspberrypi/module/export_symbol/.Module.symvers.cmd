@@ -1,0 +1,1 @@
+savedcmd_/home/yjh/kuBig2025/raspberrypi/module/export_symbol/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/yjh/kuBig2025/raspberrypi/module/export_symbol/Module.symvers -T /home/yjh/kuBig2025/raspberrypi/module/export_symbol/modules.order -i Module.symvers -e 

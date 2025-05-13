@@ -1,0 +1,1 @@
+/usr/bin/gcc -g CMakeFiles/shm_test.dir/shm_test.c.o -o shm_test 
