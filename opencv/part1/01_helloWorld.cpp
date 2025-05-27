@@ -4,7 +4,7 @@
 using namespace std;
 using namespace cv;
 
-String folderPath = "/home/yjh/kuBig2025/opencv/data/";
+String folderPath = "/home/yjh/kubig2025/opencv/data/";
 
 int main()
 {

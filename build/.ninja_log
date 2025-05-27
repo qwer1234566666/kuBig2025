@@ -329,3 +329,9 @@
 264	309	1745825024261675177	c_example/day3/CMakeFiles/stractexample.dir/stractexample.c.o	4ff353e971e1f030
 6405	6449	1745825030402601665	network/pipe_client	23afda2a2b34c76d
 652	699	1745825024653670486	c_example/day3/CMakeFiles/unionExample.dir/unionExample.c.o	66783d8175a1c1f1
+1	2040	1748323255104175632	opencv/part1/CMakeFiles/basic_op.dir/02_basicOp.cpp.o	acef708fff0e95cf
+0	2059	1748323255123175327	opencv/part1/CMakeFiles/hello.dir/01_helloWorld.cpp.o	39ba5988313b81fa
+2041	2273	1748323255335171927	opencv/part1/basic_op	16709133e072a8c
+2059	2718	1748323255777164838	opencv/part1/hello	a6551ae875128def
+2	1885	1748323386139249101	opencv/part1/CMakeFiles/hello.dir/01_helloWorld.cpp.o	39ba5988313b81fa
+1885	2240	1748323386490244340	opencv/part1/hello	a6551ae875128def
