@@ -1198,6 +1198,42 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/cmake/opencv4"
 		},
 		{
+			"name" : "OpenCV_part1_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/yjh/kubig2025/build/opencv/part1"
+		},
+		{
+			"name" : "OpenCV_part1_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "OpenCV_part1_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/yjh/kubig2025/opencv/part1"
+		},
+		{
 			"name" : "day1_BINARY_DIR",
 			"properties" : 
 			[

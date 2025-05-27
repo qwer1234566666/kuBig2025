@@ -31,7 +31,11 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3,
+						4,
+						5
 					]
 				}
 			],
@@ -54,12 +58,16 @@
 					[
 						1
 					],
-					"name" : "01_hello",
+					"name" : "OpenCV_part1",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2,
+						3,
+						4,
+						5
 					]
 				}
 			],
@@ -67,16 +75,44 @@
 			[
 				{
 					"directoryIndex" : 1,
-					"id" : "basic_op::@3da688ed45a0d4a96615",
-					"jsonFile" : "target-basic_op-Debug-3cea66f79f3d5332f34a.json",
-					"name" : "basic_op",
+					"id" : "01_helloWorld::@3da688ed45a0d4a96615",
+					"jsonFile" : "target-01_helloWorld-Debug-9443273b833da4f9320f.json",
+					"name" : "01_helloWorld",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
-					"id" : "hello::@3da688ed45a0d4a96615",
-					"jsonFile" : "target-hello-Debug-78c48f8050976840b155.json",
-					"name" : "hello",
+					"id" : "02_basicOp::@3da688ed45a0d4a96615",
+					"jsonFile" : "target-02_basicOp-Debug-4db02fbf8bdaa0bec33c.json",
+					"name" : "02_basicOp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "03_matOp::@3da688ed45a0d4a96615",
+					"jsonFile" : "target-03_matOp-Debug-824cb63e400314a55cb6.json",
+					"name" : "03_matOp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "04_InputArray::@3da688ed45a0d4a96615",
+					"jsonFile" : "target-04_InputArray-Debug-a6161e692bd11089e94b.json",
+					"name" : "04_InputArray",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "05_matOp2::@3da688ed45a0d4a96615",
+					"jsonFile" : "target-05_matOp2-Debug-7e744e3b0078f8db1b6a.json",
+					"name" : "05_matOp2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "06_matOp3::@3da688ed45a0d4a96615",
+					"jsonFile" : "target-06_matOp3-Debug-38d1cb91d0ceb899d6b5.json",
+					"name" : "06_matOp3",
 					"projectIndex" : 1
 				}
 			]

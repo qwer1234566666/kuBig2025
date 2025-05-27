@@ -1,12 +1,32 @@
 [
 {
   "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/hello.dir/01_helloWorld.cpp.o -c /home/yjh/kubig2025/opencv/part1/01_helloWorld.cpp",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/01_helloWorld.dir/01_helloWorld.cpp.o -c /home/yjh/kubig2025/opencv/part1/01_helloWorld.cpp",
   "file": "/home/yjh/kubig2025/opencv/part1/01_helloWorld.cpp"
 },
 {
   "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/basic_op.dir/02_basicOp.cpp.o -c /home/yjh/kubig2025/opencv/part1/02_basicOp.cpp",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/02_basicOp.dir/02_basicOp.cpp.o -c /home/yjh/kubig2025/opencv/part1/02_basicOp.cpp",
   "file": "/home/yjh/kubig2025/opencv/part1/02_basicOp.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/03_matOp.dir/03_matOp.cpp.o -c /home/yjh/kubig2025/opencv/part1/03_matOp.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part1/03_matOp.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/04_InputArray.dir/04_InputArray.cpp.o -c /home/yjh/kubig2025/opencv/part1/04_InputArray.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part1/04_InputArray.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/05_matOp2.dir/05_matOp2.cpp.o -c /home/yjh/kubig2025/opencv/part1/05_matOp2.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part1/05_matOp2.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/06_matOp3.dir/06_matOp3.cpp.o -c /home/yjh/kubig2025/opencv/part1/06_matOp3.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part1/06_matOp3.cpp"
 }
 ]

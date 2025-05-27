@@ -227,6 +227,15 @@ MainProject_SOURCE_DIR:STATIC=/home/yjh/kubig2025
 OpenCV_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/opencv4
 
 //Value Computed by CMake
+OpenCV_part1_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/opencv/part1
+
+//Value Computed by CMake
+OpenCV_part1_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+OpenCV_part1_SOURCE_DIR:STATIC=/home/yjh/kubig2025/opencv/part1
+
+//Value Computed by CMake
 day1_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/c_example/day1
 
 //Value Computed by CMake
