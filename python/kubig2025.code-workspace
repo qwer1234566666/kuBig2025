@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.py": "python",
+			"stdio.h": "c",
+			"stdbool.h": "c",
+			"time.h": "c",
+			"stdlib.h": "c",
+			"string.h": "c",
+			"mysql.h": "c",
+			"bowlingsql.h": "c",
+			"dotenv.h": "c",
+			"io.h": "c",
+			"uart0.h": "c",
+			"interrupt.h": "c",
+			"delay.h": "c",
+			"unistd.h": "c"
+		}
+	}
+}

@@ -44,15 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yjh/kubig2025/build/c_example/day1/cmake_install.cmake")
-  include("/home/yjh/kubig2025/build/c_example/day2/cmake_install.cmake")
-  include("/home/yjh/kubig2025/build/c_example/day3/cmake_install.cmake")
-  include("/home/yjh/kubig2025/build/stl/cmake_install.cmake")
-  include("/home/yjh/kubig2025/build/smartpoint/cmake_install.cmake")
-  include("/home/yjh/kubig2025/build/network/ipc/cmake_install.cmake")
-  include("/home/yjh/kubig2025/build/network/tcp_udp/cmake_install.cmake")
-  include("/home/yjh/kubig2025/build/network/util/cmake_install.cmake")
-  include("/home/yjh/kubig2025/build/network/multiProcess/cmake_install.cmake")
+  include("/home/yjh/kubig2025/build/opencv/part1/cmake_install.cmake")
 
 endif()
 

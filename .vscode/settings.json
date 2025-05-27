@@ -13,7 +13,8 @@
         "uart0.h": "c",
         "interrupt.h": "c",
         "delay.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "ostream": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "ros.distro": "humble",
