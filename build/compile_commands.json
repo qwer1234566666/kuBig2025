@@ -28,5 +28,15 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/06_matOp3.dir/06_matOp3.cpp.o -c /home/yjh/kubig2025/opencv/part1/06_matOp3.cpp",
   "file": "/home/yjh/kubig2025/opencv/part1/06_matOp3.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/07_vectorScarlar.dir/07_vectorScarlar.cpp.o -c /home/yjh/kubig2025/opencv/part1/07_vectorScarlar.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part1/07_vectorScarlar.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/08_viedo.dir/08_viedo.cpp.o -c /home/yjh/kubig2025/opencv/part1/08_viedo.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part1/08_viedo.cpp"
 }
 ]

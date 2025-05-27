@@ -6,5 +6,7 @@
 /home/yjh/kubig2025/build/opencv/part1/CMakeFiles/04_InputArray.dir
 /home/yjh/kubig2025/build/opencv/part1/CMakeFiles/05_matOp2.dir
 /home/yjh/kubig2025/build/opencv/part1/CMakeFiles/06_matOp3.dir
+/home/yjh/kubig2025/build/opencv/part1/CMakeFiles/07_vectorScarlar.dir
+/home/yjh/kubig2025/build/opencv/part1/CMakeFiles/08_viedo.dir
 /home/yjh/kubig2025/build/opencv/part1/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part1/CMakeFiles/rebuild_cache.dir
