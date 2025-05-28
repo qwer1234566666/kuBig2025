@@ -8,7 +8,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -40,6 +41,21 @@
 						7,
 						8
 					]
+				},
+				{
+					"build" : "opencv/part2",
+					"jsonFile" : "directory-opencv.part2-Debug-bd16ae412acae5be34a6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "opencv/part2",
+					"targetIndexes" : 
+					[
+						9
+					]
 				}
 			],
 			"name" : "Debug",
@@ -48,7 +64,8 @@
 				{
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"directoryIndexes" : 
 					[
@@ -74,6 +91,18 @@
 						6,
 						7,
 						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "OpenCV_part2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9
 					]
 				}
 			],
@@ -141,6 +170,13 @@
 					"jsonFile" : "target-09_videoSave-Debug-bc2007aced9b4f2943f3.json",
 					"name" : "09_videoSave",
 					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "10_drawing::@19020d2a710a41ce249b",
+					"jsonFile" : "target-10_drawing-Debug-944c092dcf6400de1a83.json",
+					"name" : "10_drawing",
+					"projectIndex" : 2
 				}
 			]
 		}

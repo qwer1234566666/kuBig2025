@@ -11,3 +11,6 @@
 /home/yjh/kubig2025/build/opencv/part1/CMakeFiles/09_videoSave.dir
 /home/yjh/kubig2025/build/opencv/part1/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part1/CMakeFiles/rebuild_cache.dir
+/home/yjh/kubig2025/build/opencv/part2/CMakeFiles/10_drawing.dir
+/home/yjh/kubig2025/build/opencv/part2/CMakeFiles/edit_cache.dir
+/home/yjh/kubig2025/build/opencv/part2/CMakeFiles/rebuild_cache.dir
