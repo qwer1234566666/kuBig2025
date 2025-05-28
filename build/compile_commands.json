@@ -38,5 +38,10 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/08_viedo.dir/08_viedo.cpp.o -c /home/yjh/kubig2025/opencv/part1/08_viedo.cpp",
   "file": "/home/yjh/kubig2025/opencv/part1/08_viedo.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part1/CMakeFiles/09_videoSave.dir/09_videoSave.cpp.o -c /home/yjh/kubig2025/opencv/part1/09_videoSave.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part1/09_videoSave.cpp"
 }
 ]
