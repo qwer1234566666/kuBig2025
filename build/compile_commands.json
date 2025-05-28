@@ -88,5 +88,15 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/17_filestorage2.dir/17_filestorage2.cpp.o -c /home/yjh/kubig2025/opencv/part2/17_filestorage2.cpp",
   "file": "/home/yjh/kubig2025/opencv/part2/17_filestorage2.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/18_camTest.dir/18_camTest.cpp.o -c /home/yjh/kubig2025/opencv/part2/18_camTest.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part2/18_camTest.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/19_draw_rect_mouse.dir/19_draw_rect_mouse.cpp.o -c /home/yjh/kubig2025/opencv/part2/19_draw_rect_mouse.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part2/19_draw_rect_mouse.cpp"
 }
 ]

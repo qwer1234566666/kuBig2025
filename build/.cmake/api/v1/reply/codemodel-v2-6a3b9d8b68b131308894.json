@@ -61,7 +61,9 @@
 						13,
 						14,
 						15,
-						16
+						16,
+						17,
+						18
 					]
 				}
 			],
@@ -116,7 +118,9 @@
 						13,
 						14,
 						15,
-						16
+						16,
+						17,
+						18
 					]
 				}
 			],
@@ -239,6 +243,20 @@
 					"id" : "17_filestorage2::@19020d2a710a41ce249b",
 					"jsonFile" : "target-17_filestorage2-Debug-ee4b5836acad9be1a143.json",
 					"name" : "17_filestorage2",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "18_camTest::@19020d2a710a41ce249b",
+					"jsonFile" : "target-18_camTest-Debug-b08baece1c07cee284de.json",
+					"name" : "18_camTest",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "19_draw_rect_mouse::@19020d2a710a41ce249b",
+					"jsonFile" : "target-19_draw_rect_mouse-Debug-a8548b71bb464840f94c.json",
+					"name" : "19_draw_rect_mouse",
 					"projectIndex" : 2
 				}
 			]
