@@ -63,5 +63,30 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/13_keyboard.dir/13_keyboard.cpp.o -c /home/yjh/kubig2025/opencv/part2/13_keyboard.cpp",
   "file": "/home/yjh/kubig2025/opencv/part2/13_keyboard.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/14_mouse.dir/14_mouse.cpp.o -c /home/yjh/kubig2025/opencv/part2/14_mouse.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part2/14_mouse.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/15_trackbar.dir/15_trackbar.cpp.o -c /home/yjh/kubig2025/opencv/part2/15_trackbar.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part2/15_trackbar.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/16_filestorage.dir/16_filestorage.cpp.o -c /home/yjh/kubig2025/opencv/part2/16_filestorage.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part2/16_filestorage.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/16_filestorage.dir/array.cpp.o -c /home/yjh/kubig2025/opencv/part2/array.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part2/array.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/17_filestorage2.dir/17_filestorage2.cpp.o -c /home/yjh/kubig2025/opencv/part2/17_filestorage2.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part2/17_filestorage2.cpp"
 }
 ]

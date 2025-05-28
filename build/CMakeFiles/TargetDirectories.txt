@@ -15,5 +15,9 @@
 /home/yjh/kubig2025/build/opencv/part2/CMakeFiles/11_font.dir
 /home/yjh/kubig2025/build/opencv/part2/CMakeFiles/12_freetypeFont.dir
 /home/yjh/kubig2025/build/opencv/part2/CMakeFiles/13_keyboard.dir
+/home/yjh/kubig2025/build/opencv/part2/CMakeFiles/14_mouse.dir
+/home/yjh/kubig2025/build/opencv/part2/CMakeFiles/15_trackbar.dir
+/home/yjh/kubig2025/build/opencv/part2/CMakeFiles/16_filestorage.dir
+/home/yjh/kubig2025/build/opencv/part2/CMakeFiles/17_filestorage2.dir
 /home/yjh/kubig2025/build/opencv/part2/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part2/CMakeFiles/rebuild_cache.dir

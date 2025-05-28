@@ -57,7 +57,11 @@
 						9,
 						10,
 						11,
-						12
+						12,
+						13,
+						14,
+						15,
+						16
 					]
 				}
 			],
@@ -108,7 +112,11 @@
 						9,
 						10,
 						11,
-						12
+						12,
+						13,
+						14,
+						15,
+						16
 					]
 				}
 			],
@@ -180,29 +188,57 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "10_drawing::@19020d2a710a41ce249b",
-					"jsonFile" : "target-10_drawing-Debug-944c092dcf6400de1a83.json",
+					"jsonFile" : "target-10_drawing-Debug-2cc92410d09cb98b0686.json",
 					"name" : "10_drawing",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "11_font::@19020d2a710a41ce249b",
-					"jsonFile" : "target-11_font-Debug-57b6a64fdb4deec2af01.json",
+					"jsonFile" : "target-11_font-Debug-52037df76fbf58b9878e.json",
 					"name" : "11_font",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "12_freetypeFont::@19020d2a710a41ce249b",
-					"jsonFile" : "target-12_freetypeFont-Debug-74f6669eaed4ec360173.json",
+					"jsonFile" : "target-12_freetypeFont-Debug-947b291eb5d1c2c06f62.json",
 					"name" : "12_freetypeFont",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "13_keyboard::@19020d2a710a41ce249b",
-					"jsonFile" : "target-13_keyboard-Debug-d36c8bd8b7ebcd909a8a.json",
+					"jsonFile" : "target-13_keyboard-Debug-5a4f43006b6fd755e10f.json",
 					"name" : "13_keyboard",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "14_mouse::@19020d2a710a41ce249b",
+					"jsonFile" : "target-14_mouse-Debug-53c807ec91f5055284d0.json",
+					"name" : "14_mouse",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "15_trackbar::@19020d2a710a41ce249b",
+					"jsonFile" : "target-15_trackbar-Debug-15d7b2378068630806a9.json",
+					"name" : "15_trackbar",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "16_filestorage::@19020d2a710a41ce249b",
+					"jsonFile" : "target-16_filestorage-Debug-9c4133174236e7c8ab4c.json",
+					"name" : "16_filestorage",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "17_filestorage2::@19020d2a710a41ce249b",
+					"jsonFile" : "target-17_filestorage2-Debug-ee4b5836acad9be1a143.json",
+					"name" : "17_filestorage2",
 					"projectIndex" : 2
 				}
 			]
