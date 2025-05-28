@@ -12,5 +12,7 @@
 /home/yjh/kubig2025/build/opencv/part1/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part1/CMakeFiles/rebuild_cache.dir
 /home/yjh/kubig2025/build/opencv/part2/CMakeFiles/10_drawing.dir
+/home/yjh/kubig2025/build/opencv/part2/CMakeFiles/11_font.dir
+/home/yjh/kubig2025/build/opencv/part2/CMakeFiles/12_freetypeFont.dir
 /home/yjh/kubig2025/build/opencv/part2/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part2/CMakeFiles/rebuild_cache.dir

@@ -48,5 +48,15 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/10_drawing.dir/10_drawing.cpp.o -c /home/yjh/kubig2025/opencv/part2/10_drawing.cpp",
   "file": "/home/yjh/kubig2025/opencv/part2/10_drawing.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/11_font.dir/11_font.cpp.o -c /home/yjh/kubig2025/opencv/part2/11_font.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part2/11_font.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part2/CMakeFiles/12_freetypeFont.dir/12_freetypeFont.cpp.o -c /home/yjh/kubig2025/opencv/part2/12_freetypeFont.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part2/12_freetypeFont.cpp"
 }
 ]

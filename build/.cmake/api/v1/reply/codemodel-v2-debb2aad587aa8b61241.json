@@ -54,7 +54,9 @@
 					"source" : "opencv/part2",
 					"targetIndexes" : 
 					[
-						9
+						9,
+						10,
+						11
 					]
 				}
 			],
@@ -102,7 +104,9 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						9
+						9,
+						10,
+						11
 					]
 				}
 			],
@@ -176,6 +180,20 @@
 					"id" : "10_drawing::@19020d2a710a41ce249b",
 					"jsonFile" : "target-10_drawing-Debug-944c092dcf6400de1a83.json",
 					"name" : "10_drawing",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "11_font::@19020d2a710a41ce249b",
+					"jsonFile" : "target-11_font-Debug-57b6a64fdb4deec2af01.json",
+					"name" : "11_font",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "12_freetypeFont::@19020d2a710a41ce249b",
+					"jsonFile" : "target-12_freetypeFont-Debug-74f6669eaed4ec360173.json",
+					"name" : "12_freetypeFont",
 					"projectIndex" : 2
 				}
 			]
