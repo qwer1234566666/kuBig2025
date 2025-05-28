@@ -56,7 +56,8 @@
 					[
 						9,
 						10,
-						11
+						11,
+						12
 					]
 				}
 			],
@@ -106,7 +107,8 @@
 					[
 						9,
 						10,
-						11
+						11,
+						12
 					]
 				}
 			],
@@ -194,6 +196,13 @@
 					"id" : "12_freetypeFont::@19020d2a710a41ce249b",
 					"jsonFile" : "target-12_freetypeFont-Debug-74f6669eaed4ec360173.json",
 					"name" : "12_freetypeFont",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "13_keyboard::@19020d2a710a41ce249b",
+					"jsonFile" : "target-13_keyboard-Debug-d36c8bd8b7ebcd909a8a.json",
+					"name" : "13_keyboard",
 					"projectIndex" : 2
 				}
 			]

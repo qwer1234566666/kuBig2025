@@ -504,6 +504,40 @@ build opencv/part2/12_freetypeFont: CXX_EXECUTABLE_LINKER__12_freetypeFont_Debug
   TARGET_FILE = opencv/part2/12_freetypeFont
   TARGET_PDB = 12_freetypeFont.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 13_keyboard
+
+
+#############################################
+# Order-only phony target for 13_keyboard
+
+build cmake_object_order_depends_target_13_keyboard: phony || opencv/part2/CMakeFiles/13_keyboard.dir
+
+build opencv/part2/CMakeFiles/13_keyboard.dir/13_keyboard.cpp.o: CXX_COMPILER__13_keyboard_Debug /home/yjh/kubig2025/opencv/part2/13_keyboard.cpp || cmake_object_order_depends_target_13_keyboard
+  DEP_FILE = opencv/part2/CMakeFiles/13_keyboard.dir/13_keyboard.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /usr/include/opencv4
+  OBJECT_DIR = opencv/part2/CMakeFiles/13_keyboard.dir
+  OBJECT_FILE_DIR = opencv/part2/CMakeFiles/13_keyboard.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 13_keyboard
+
+
+#############################################
+# Link the executable opencv/part2/13_keyboard
+
+build opencv/part2/13_keyboard: CXX_EXECUTABLE_LINKER__13_keyboard_Debug opencv/part2/CMakeFiles/13_keyboard.dir/13_keyboard.cpp.o | /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  OBJECT_DIR = opencv/part2/CMakeFiles/13_keyboard.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = opencv/part2/13_keyboard
+  TARGET_PDB = 13_keyboard.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -554,6 +588,8 @@ build 11_font: phony opencv/part2/11_font
 
 build 12_freetypeFont: phony opencv/part2/12_freetypeFont
 
+build 13_keyboard: phony opencv/part2/13_keyboard
+
 # =============================================================================
 # Folder targets.
 
@@ -576,7 +612,7 @@ build opencv/part1/all: phony opencv/part1/01_helloWorld opencv/part1/02_basicOp
 #############################################
 # Folder: /home/yjh/kubig2025/build/opencv/part2
 
-build opencv/part2/all: phony opencv/part2/10_drawing opencv/part2/11_font opencv/part2/12_freetypeFont
+build opencv/part2/all: phony opencv/part2/10_drawing opencv/part2/11_font opencv/part2/12_freetypeFont opencv/part2/13_keyboard
 
 # =============================================================================
 # Built-in targets
