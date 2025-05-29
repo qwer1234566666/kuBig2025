@@ -38,5 +38,10 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/29_affine.dir/29_affine.cpp.o -c /home/yjh/kubig2025/opencv/part4/29_affine.cpp",
   "file": "/home/yjh/kubig2025/opencv/part4/29_affine.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/30_perspective.dir/30_perspective.cpp.o -c /home/yjh/kubig2025/opencv/part4/30_perspective.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part4/30_perspective.cpp"
 }
 ]

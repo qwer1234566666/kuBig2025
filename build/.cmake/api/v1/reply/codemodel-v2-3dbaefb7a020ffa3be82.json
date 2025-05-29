@@ -52,7 +52,8 @@
 					"source" : "opencv/part4",
 					"targetIndexes" : 
 					[
-						7
+						7,
+						8
 					]
 				}
 			],
@@ -98,7 +99,8 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						7
+						7,
+						8
 					]
 				}
 			],
@@ -158,6 +160,13 @@
 					"id" : "29_affine::@2330b36b9a925f7e643b",
 					"jsonFile" : "target-29_affine-Debug-5fd528d3c7c95c72eeef.json",
 					"name" : "29_affine",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "30_perspective::@2330b36b9a925f7e643b",
+					"jsonFile" : "target-30_perspective-Debug-f28b41e3ecb3d64daf97.json",
+					"name" : "30_perspective",
 					"projectIndex" : 2
 				}
 			]
