@@ -30,7 +30,11 @@
 					"source" : "opencv/part3",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2,
+						3,
+						4
 					]
 				}
 			],
@@ -57,7 +61,11 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2,
+						3,
+						4
 					]
 				}
 			],
@@ -68,6 +76,34 @@
 					"id" : "22_brightness::@16c8c5003ef66cd84fd9",
 					"jsonFile" : "target-22_brightness-Debug-e130815c1df0be29fe96.json",
 					"name" : "22_brightness",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "23_histogram::@16c8c5003ef66cd84fd9",
+					"jsonFile" : "target-23_histogram-Debug-a37c90a4758bb69121de.json",
+					"name" : "23_histogram",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "24_arithmetic::@16c8c5003ef66cd84fd9",
+					"jsonFile" : "target-24_arithmetic-Debug-ab232bda40134f8ef04a.json",
+					"name" : "24_arithmetic",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "25_cam_histo::@16c8c5003ef66cd84fd9",
+					"jsonFile" : "target-25_cam_histo-Debug-b6d65ce35c0781b0fc01.json",
+					"name" : "25_cam_histo",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "26_filter::@16c8c5003ef66cd84fd9",
+					"jsonFile" : "target-26_filter-Debug-7364b1df8927d55ae6c3.json",
+					"name" : "26_filter",
 					"projectIndex" : 1
 				}
 			]

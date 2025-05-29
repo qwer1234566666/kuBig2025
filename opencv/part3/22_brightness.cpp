@@ -11,33 +11,27 @@ String folderPath = "/home/yjh/kubig2025/opencv/data/";
 
 int main()
 {
-    Mat img = imread(folderPath + "lenna.bmp");
+    Mat img = imread(folderPath + "hawkes.bmp", IMREAD_GRAYSCALE);
     namedWindow("img");
-    auto i = getTickCount();
-    int keycode;
-    TickMeter tm1;
-    TickMeter tm2;
-    int fps = 100;
-    while (true)
-    {
-        tm1.start();
-        tm2.start();
-        keycode = waitKey(3);
-        cout << "keycode: " << keycode << endl;
-        cout << "i: " << i << endl;
-        tm1.stop();
-        if (tm1.getFPS() > fps)
-        {
-            auto sleep_duration = static_cast<int>(1000 * (tm1.getFPS() - fps) / tm1.getFPS() / fps);
-            this_thread::sleep_for(chrono::milliseconds(sleep_duration));
-        }
-        tm2.stop();
-        cout << "fps1 : " << tm1.getFPS() << endl;
-        cout << "fps2 : " << tm2.getFPS() << endl;
-        imshow("img", img);
-        if (keycode == 27)
-            break;
-    }
+    Mat img2 = img + 100; // bright
+    Mat img3 = 2.f * img; // contrast 대조
+    Mat img4 = img + (img - 128) * 1.f;
+
+    double min, max;
+    minMaxLoc(img, &min, &max);
+
+    Mat img5 = (img - min) * 255 / (max - min); // stretching
+
+    Mat img6;
+    equalizeHist(img, img6); // 히스토 평활화!
+
+    imshow("img", img);
+    imshow("img2", img2);
+    imshow("img3", img3);
+    imshow("img4", img4);
+    imshow("img5", img5);
+    imshow("img6", img6);
+    waitKey();
     destroyAllWindows();
     return 0;
 }

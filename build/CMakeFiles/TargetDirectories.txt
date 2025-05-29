@@ -1,5 +1,9 @@
 /home/yjh/kubig2025/build/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/CMakeFiles/rebuild_cache.dir
 /home/yjh/kubig2025/build/opencv/part3/CMakeFiles/22_brightness.dir
+/home/yjh/kubig2025/build/opencv/part3/CMakeFiles/23_histogram.dir
+/home/yjh/kubig2025/build/opencv/part3/CMakeFiles/24_arithmetic.dir
+/home/yjh/kubig2025/build/opencv/part3/CMakeFiles/25_cam_histo.dir
+/home/yjh/kubig2025/build/opencv/part3/CMakeFiles/26_filter.dir
 /home/yjh/kubig2025/build/opencv/part3/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part3/CMakeFiles/rebuild_cache.dir

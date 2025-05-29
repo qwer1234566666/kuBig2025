@@ -3,5 +3,25 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/22_brightness.dir/22_brightness.cpp.o -c /home/yjh/kubig2025/opencv/part3/22_brightness.cpp",
   "file": "/home/yjh/kubig2025/opencv/part3/22_brightness.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/23_histogram.dir/23_histogram.cpp.o -c /home/yjh/kubig2025/opencv/part3/23_histogram.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part3/23_histogram.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/24_arithmetic.dir/24_arithmetic.cpp.o -c /home/yjh/kubig2025/opencv/part3/24_arithmetic.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part3/24_arithmetic.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/25_cam_histo.dir/25_cam_histo.cpp.o -c /home/yjh/kubig2025/opencv/part3/25_cam_histo.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part3/25_cam_histo.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/26_filter.dir/26_filter.cpp.o -c /home/yjh/kubig2025/opencv/part3/26_filter.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part3/26_filter.cpp"
 }
 ]
