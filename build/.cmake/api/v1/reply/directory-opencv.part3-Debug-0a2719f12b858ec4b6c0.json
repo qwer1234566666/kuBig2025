@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "opencv/part2",
-		"source" : "opencv/part2"
+		"build" : "opencv/part3",
+		"source" : "opencv/part3"
 	}
 }
