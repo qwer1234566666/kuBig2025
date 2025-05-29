@@ -8,7 +8,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
@@ -34,7 +35,24 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "opencv/part4",
+					"jsonFile" : "directory-opencv.part4-Debug-919f059c99e5a40e8085.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "opencv/part4",
+					"targetIndexes" : 
+					[
+						7
 					]
 				}
 			],
@@ -44,7 +62,8 @@
 				{
 					"childIndexes" : 
 					[
-						1
+						1,
+						2
 					],
 					"directoryIndexes" : 
 					[
@@ -65,7 +84,21 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "OpenCV_part4",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
 					]
 				}
 			],
@@ -105,6 +138,27 @@
 					"jsonFile" : "target-26_filter-Debug-7364b1df8927d55ae6c3.json",
 					"name" : "26_filter",
 					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "27_bilateral::@16c8c5003ef66cd84fd9",
+					"jsonFile" : "target-27_bilateral-Debug-662a8fc471af518ad602.json",
+					"name" : "27_bilateral",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "28_median::@16c8c5003ef66cd84fd9",
+					"jsonFile" : "target-28_median-Debug-91d909da0778438a7758.json",
+					"name" : "28_median",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "29_affine::@2330b36b9a925f7e643b",
+					"jsonFile" : "target-29_affine-Debug-5fd528d3c7c95c72eeef.json",
+					"name" : "29_affine",
+					"projectIndex" : 2
 				}
 			]
 		}

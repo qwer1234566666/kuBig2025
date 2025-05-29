@@ -5,5 +5,10 @@
 /home/yjh/kubig2025/build/opencv/part3/CMakeFiles/24_arithmetic.dir
 /home/yjh/kubig2025/build/opencv/part3/CMakeFiles/25_cam_histo.dir
 /home/yjh/kubig2025/build/opencv/part3/CMakeFiles/26_filter.dir
+/home/yjh/kubig2025/build/opencv/part3/CMakeFiles/27_bilateral.dir
+/home/yjh/kubig2025/build/opencv/part3/CMakeFiles/28_median.dir
 /home/yjh/kubig2025/build/opencv/part3/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part3/CMakeFiles/rebuild_cache.dir
+/home/yjh/kubig2025/build/opencv/part4/CMakeFiles/29_affine.dir
+/home/yjh/kubig2025/build/opencv/part4/CMakeFiles/edit_cache.dir
+/home/yjh/kubig2025/build/opencv/part4/CMakeFiles/rebuild_cache.dir

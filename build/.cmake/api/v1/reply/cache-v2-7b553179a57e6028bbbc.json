@@ -775,7 +775,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1304,6 +1304,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/yjh/kubig2025/opencv/part3"
+		},
+		{
+			"name" : "OpenCV_part4_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/yjh/kubig2025/build/opencv/part4"
+		},
+		{
+			"name" : "OpenCV_part4_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "OpenCV_part4_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/yjh/kubig2025/opencv/part4"
 		},
 		{
 			"name" : "day1_BINARY_DIR",

@@ -23,5 +23,20 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/26_filter.dir/26_filter.cpp.o -c /home/yjh/kubig2025/opencv/part3/26_filter.cpp",
   "file": "/home/yjh/kubig2025/opencv/part3/26_filter.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/27_bilateral.dir/27_bilateral.cpp.o -c /home/yjh/kubig2025/opencv/part3/27_bilateral.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part3/27_bilateral.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/28_median.dir/28_median.cpp.o -c /home/yjh/kubig2025/opencv/part3/28_median.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part3/28_median.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/29_affine.dir/29_affine.cpp.o -c /home/yjh/kubig2025/opencv/part4/29_affine.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part4/29_affine.cpp"
 }
 ]
