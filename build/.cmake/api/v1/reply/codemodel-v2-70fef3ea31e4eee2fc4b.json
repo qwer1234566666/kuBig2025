@@ -53,7 +53,10 @@
 					"targetIndexes" : 
 					[
 						7,
-						8
+						8,
+						9,
+						10,
+						11
 					]
 				}
 			],
@@ -100,7 +103,10 @@
 					"targetIndexes" : 
 					[
 						7,
-						8
+						8,
+						9,
+						10,
+						11
 					]
 				}
 			],
@@ -167,6 +173,27 @@
 					"id" : "30_perspective::@2330b36b9a925f7e643b",
 					"jsonFile" : "target-30_perspective-Debug-f28b41e3ecb3d64daf97.json",
 					"name" : "30_perspective",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "31_sobel::@2330b36b9a925f7e643b",
+					"jsonFile" : "target-31_sobel-Debug-f33f7f6b669732ea7d72.json",
+					"name" : "31_sobel",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "32_canny::@2330b36b9a925f7e643b",
+					"jsonFile" : "target-32_canny-Debug-1a3916a68f59ff1b2d37.json",
+					"name" : "32_canny",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "33_hougline::@2330b36b9a925f7e643b",
+					"jsonFile" : "target-33_hougline-Debug-235b707bb3af9e58c188.json",
+					"name" : "33_hougline",
 					"projectIndex" : 2
 				}
 			]
