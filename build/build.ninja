@@ -538,6 +538,210 @@ build opencv/part4/34_hougCircle: CXX_EXECUTABLE_LINKER__34_hougCircle_Debug ope
   TARGET_FILE = opencv/part4/34_hougCircle
   TARGET_PDB = 34_hougCircle.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 35_color_split
+
+
+#############################################
+# Order-only phony target for 35_color_split
+
+build cmake_object_order_depends_target_35_color_split: phony || opencv/part4/CMakeFiles/35_color_split.dir
+
+build opencv/part4/CMakeFiles/35_color_split.dir/35_color_split.cpp.o: CXX_COMPILER__35_color_split_Debug /home/yjh/kubig2025/opencv/part4/35_color_split.cpp || cmake_object_order_depends_target_35_color_split
+  DEP_FILE = opencv/part4/CMakeFiles/35_color_split.dir/35_color_split.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /usr/include/opencv4
+  OBJECT_DIR = opencv/part4/CMakeFiles/35_color_split.dir
+  OBJECT_FILE_DIR = opencv/part4/CMakeFiles/35_color_split.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 35_color_split
+
+
+#############################################
+# Link the executable opencv/part4/35_color_split
+
+build opencv/part4/35_color_split: CXX_EXECUTABLE_LINKER__35_color_split_Debug opencv/part4/CMakeFiles/35_color_split.dir/35_color_split.cpp.o | /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  OBJECT_DIR = opencv/part4/CMakeFiles/35_color_split.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = opencv/part4/35_color_split
+  TARGET_PDB = 35_color_split.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 36_inrange
+
+
+#############################################
+# Order-only phony target for 36_inrange
+
+build cmake_object_order_depends_target_36_inrange: phony || opencv/part4/CMakeFiles/36_inrange.dir
+
+build opencv/part4/CMakeFiles/36_inrange.dir/36_inrange.cpp.o: CXX_COMPILER__36_inrange_Debug /home/yjh/kubig2025/opencv/part4/36_inrange.cpp || cmake_object_order_depends_target_36_inrange
+  DEP_FILE = opencv/part4/CMakeFiles/36_inrange.dir/36_inrange.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /usr/include/opencv4
+  OBJECT_DIR = opencv/part4/CMakeFiles/36_inrange.dir
+  OBJECT_FILE_DIR = opencv/part4/CMakeFiles/36_inrange.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 36_inrange
+
+
+#############################################
+# Link the executable opencv/part4/36_inrange
+
+build opencv/part4/36_inrange: CXX_EXECUTABLE_LINKER__36_inrange_Debug opencv/part4/CMakeFiles/36_inrange.dir/36_inrange.cpp.o | /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  OBJECT_DIR = opencv/part4/CMakeFiles/36_inrange.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = opencv/part4/36_inrange
+  TARGET_PDB = 36_inrange.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 37_threshold
+
+
+#############################################
+# Order-only phony target for 37_threshold
+
+build cmake_object_order_depends_target_37_threshold: phony || opencv/part4/CMakeFiles/37_threshold.dir
+
+build opencv/part4/CMakeFiles/37_threshold.dir/37_threshold.cpp.o: CXX_COMPILER__37_threshold_Debug /home/yjh/kubig2025/opencv/part4/37_threshold.cpp || cmake_object_order_depends_target_37_threshold
+  DEP_FILE = opencv/part4/CMakeFiles/37_threshold.dir/37_threshold.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /usr/include/opencv4
+  OBJECT_DIR = opencv/part4/CMakeFiles/37_threshold.dir
+  OBJECT_FILE_DIR = opencv/part4/CMakeFiles/37_threshold.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 37_threshold
+
+
+#############################################
+# Link the executable opencv/part4/37_threshold
+
+build opencv/part4/37_threshold: CXX_EXECUTABLE_LINKER__37_threshold_Debug opencv/part4/CMakeFiles/37_threshold.dir/37_threshold.cpp.o | /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  OBJECT_DIR = opencv/part4/CMakeFiles/37_threshold.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = opencv/part4/37_threshold
+  TARGET_PDB = 37_threshold.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 38_morphology
+
+
+#############################################
+# Order-only phony target for 38_morphology
+
+build cmake_object_order_depends_target_38_morphology: phony || opencv/part4/CMakeFiles/38_morphology.dir
+
+build opencv/part4/CMakeFiles/38_morphology.dir/38_morphology.cpp.o: CXX_COMPILER__38_morphology_Debug /home/yjh/kubig2025/opencv/part4/38_morphology.cpp || cmake_object_order_depends_target_38_morphology
+  DEP_FILE = opencv/part4/CMakeFiles/38_morphology.dir/38_morphology.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /usr/include/opencv4
+  OBJECT_DIR = opencv/part4/CMakeFiles/38_morphology.dir
+  OBJECT_FILE_DIR = opencv/part4/CMakeFiles/38_morphology.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 38_morphology
+
+
+#############################################
+# Link the executable opencv/part4/38_morphology
+
+build opencv/part4/38_morphology: CXX_EXECUTABLE_LINKER__38_morphology_Debug opencv/part4/CMakeFiles/38_morphology.dir/38_morphology.cpp.o | /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  OBJECT_DIR = opencv/part4/CMakeFiles/38_morphology.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = opencv/part4/38_morphology
+  TARGET_PDB = 38_morphology.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 39_labeling
+
+
+#############################################
+# Order-only phony target for 39_labeling
+
+build cmake_object_order_depends_target_39_labeling: phony || opencv/part4/CMakeFiles/39_labeling.dir
+
+build opencv/part4/CMakeFiles/39_labeling.dir/39_labeling.cpp.o: CXX_COMPILER__39_labeling_Debug /home/yjh/kubig2025/opencv/part4/39_labeling.cpp || cmake_object_order_depends_target_39_labeling
+  DEP_FILE = opencv/part4/CMakeFiles/39_labeling.dir/39_labeling.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /usr/include/opencv4
+  OBJECT_DIR = opencv/part4/CMakeFiles/39_labeling.dir
+  OBJECT_FILE_DIR = opencv/part4/CMakeFiles/39_labeling.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 39_labeling
+
+
+#############################################
+# Link the executable opencv/part4/39_labeling
+
+build opencv/part4/39_labeling: CXX_EXECUTABLE_LINKER__39_labeling_Debug opencv/part4/CMakeFiles/39_labeling.dir/39_labeling.cpp.o | /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  OBJECT_DIR = opencv/part4/CMakeFiles/39_labeling.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = opencv/part4/39_labeling
+  TARGET_PDB = 39_labeling.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 40_follow_color_paper
+
+
+#############################################
+# Order-only phony target for 40_follow_color_paper
+
+build cmake_object_order_depends_target_40_follow_color_paper: phony || opencv/part4/CMakeFiles/40_follow_color_paper.dir
+
+build opencv/part4/CMakeFiles/40_follow_color_paper.dir/40_follow_color_paper.cpp.o: CXX_COMPILER__40_follow_color_paper_Debug /home/yjh/kubig2025/opencv/part4/40_follow_color_paper.cpp || cmake_object_order_depends_target_40_follow_color_paper
+  DEP_FILE = opencv/part4/CMakeFiles/40_follow_color_paper.dir/40_follow_color_paper.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /usr/include/opencv4
+  OBJECT_DIR = opencv/part4/CMakeFiles/40_follow_color_paper.dir
+  OBJECT_FILE_DIR = opencv/part4/CMakeFiles/40_follow_color_paper.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 40_follow_color_paper
+
+
+#############################################
+# Link the executable opencv/part4/40_follow_color_paper
+
+build opencv/part4/40_follow_color_paper: CXX_EXECUTABLE_LINKER__40_follow_color_paper_Debug opencv/part4/CMakeFiles/40_follow_color_paper.dir/40_follow_color_paper.cpp.o | /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d  /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+  OBJECT_DIR = opencv/part4/CMakeFiles/40_follow_color_paper.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = opencv/part4/40_follow_color_paper
+  TARGET_PDB = 40_follow_color_paper.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -590,6 +794,18 @@ build 33_hougline: phony opencv/part4/33_hougline
 
 build 34_hougCircle: phony opencv/part4/34_hougCircle
 
+build 35_color_split: phony opencv/part4/35_color_split
+
+build 36_inrange: phony opencv/part4/36_inrange
+
+build 37_threshold: phony opencv/part4/37_threshold
+
+build 38_morphology: phony opencv/part4/38_morphology
+
+build 39_labeling: phony opencv/part4/39_labeling
+
+build 40_follow_color_paper: phony opencv/part4/40_follow_color_paper
+
 # =============================================================================
 # Folder targets.
 
@@ -612,7 +828,7 @@ build opencv/part3/all: phony opencv/part3/22_brightness opencv/part3/23_histogr
 #############################################
 # Folder: /home/yjh/kubig2025/build/opencv/part4
 
-build opencv/part4/all: phony opencv/part4/29_affine opencv/part4/30_perspective opencv/part4/31_sobel opencv/part4/32_canny opencv/part4/33_hougline opencv/part4/34_hougCircle
+build opencv/part4/all: phony opencv/part4/29_affine opencv/part4/30_perspective opencv/part4/31_sobel opencv/part4/32_canny opencv/part4/33_hougline opencv/part4/34_hougCircle opencv/part4/35_color_split opencv/part4/36_inrange opencv/part4/37_threshold opencv/part4/38_morphology opencv/part4/39_labeling opencv/part4/40_follow_color_paper
 
 # =============================================================================
 # Built-in targets

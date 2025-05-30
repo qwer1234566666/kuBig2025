@@ -63,5 +63,35 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/34_hougCircle.dir/34_hougCircle.cpp.o -c /home/yjh/kubig2025/opencv/part4/34_hougCircle.cpp",
   "file": "/home/yjh/kubig2025/opencv/part4/34_hougCircle.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/35_color_split.dir/35_color_split.cpp.o -c /home/yjh/kubig2025/opencv/part4/35_color_split.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part4/35_color_split.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/36_inrange.dir/36_inrange.cpp.o -c /home/yjh/kubig2025/opencv/part4/36_inrange.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part4/36_inrange.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/37_threshold.dir/37_threshold.cpp.o -c /home/yjh/kubig2025/opencv/part4/37_threshold.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part4/37_threshold.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/38_morphology.dir/38_morphology.cpp.o -c /home/yjh/kubig2025/opencv/part4/38_morphology.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part4/38_morphology.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/39_labeling.dir/39_labeling.cpp.o -c /home/yjh/kubig2025/opencv/part4/39_labeling.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part4/39_labeling.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/40_follow_color_paper.dir/40_follow_color_paper.cpp.o -c /home/yjh/kubig2025/opencv/part4/40_follow_color_paper.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part4/40_follow_color_paper.cpp"
 }
 ]

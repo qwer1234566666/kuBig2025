@@ -15,5 +15,11 @@
 /home/yjh/kubig2025/build/opencv/part4/CMakeFiles/32_canny.dir
 /home/yjh/kubig2025/build/opencv/part4/CMakeFiles/33_hougline.dir
 /home/yjh/kubig2025/build/opencv/part4/CMakeFiles/34_hougCircle.dir
+/home/yjh/kubig2025/build/opencv/part4/CMakeFiles/35_color_split.dir
+/home/yjh/kubig2025/build/opencv/part4/CMakeFiles/36_inrange.dir
+/home/yjh/kubig2025/build/opencv/part4/CMakeFiles/37_threshold.dir
+/home/yjh/kubig2025/build/opencv/part4/CMakeFiles/38_morphology.dir
+/home/yjh/kubig2025/build/opencv/part4/CMakeFiles/39_labeling.dir
+/home/yjh/kubig2025/build/opencv/part4/CMakeFiles/40_follow_color_paper.dir
 /home/yjh/kubig2025/build/opencv/part4/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part4/CMakeFiles/rebuild_cache.dir

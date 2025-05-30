@@ -57,7 +57,13 @@
 						9,
 						10,
 						11,
-						12
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
 					]
 				}
 			],
@@ -108,7 +114,13 @@
 						9,
 						10,
 						11,
-						12
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
 					]
 				}
 			],
@@ -203,6 +215,48 @@
 					"id" : "34_hougCircle::@2330b36b9a925f7e643b",
 					"jsonFile" : "target-34_hougCircle-Debug-8477e2dff7e3aa8d7583.json",
 					"name" : "34_hougCircle",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "35_color_split::@2330b36b9a925f7e643b",
+					"jsonFile" : "target-35_color_split-Debug-1a1cb27d433bd347f69a.json",
+					"name" : "35_color_split",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "36_inrange::@2330b36b9a925f7e643b",
+					"jsonFile" : "target-36_inrange-Debug-850fa0961affaf935079.json",
+					"name" : "36_inrange",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "37_threshold::@2330b36b9a925f7e643b",
+					"jsonFile" : "target-37_threshold-Debug-681aa1b5aa177aaba8aa.json",
+					"name" : "37_threshold",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "38_morphology::@2330b36b9a925f7e643b",
+					"jsonFile" : "target-38_morphology-Debug-36f221a9c3fd874e96cf.json",
+					"name" : "38_morphology",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "39_labeling::@2330b36b9a925f7e643b",
+					"jsonFile" : "target-39_labeling-Debug-58c86b38aab3f926554b.json",
+					"name" : "39_labeling",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "40_follow_color_paper::@2330b36b9a925f7e643b",
+					"jsonFile" : "target-40_follow_color_paper-Debug-7d44ada5e3b175e6acba.json",
+					"name" : "40_follow_color_paper",
 					"projectIndex" : 2
 				}
 			]
