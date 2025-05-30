@@ -14,5 +14,6 @@
 /home/yjh/kubig2025/build/opencv/part4/CMakeFiles/31_sobel.dir
 /home/yjh/kubig2025/build/opencv/part4/CMakeFiles/32_canny.dir
 /home/yjh/kubig2025/build/opencv/part4/CMakeFiles/33_hougline.dir
+/home/yjh/kubig2025/build/opencv/part4/CMakeFiles/34_hougCircle.dir
 /home/yjh/kubig2025/build/opencv/part4/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part4/CMakeFiles/rebuild_cache.dir

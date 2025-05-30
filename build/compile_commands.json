@@ -58,5 +58,10 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/33_hougline.dir/33_hougline.cpp.o -c /home/yjh/kubig2025/opencv/part4/33_hougline.cpp",
   "file": "/home/yjh/kubig2025/opencv/part4/33_hougline.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/34_hougCircle.dir/34_hougCircle.cpp.o -c /home/yjh/kubig2025/opencv/part4/34_hougCircle.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part4/34_hougCircle.cpp"
 }
 ]
