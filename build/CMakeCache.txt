@@ -263,6 +263,15 @@ OpenCV_part4_IS_TOP_LEVEL:STATIC=OFF
 OpenCV_part4_SOURCE_DIR:STATIC=/home/yjh/kubig2025/opencv/part4
 
 //Value Computed by CMake
+OpenCV_part5_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/opencv/part5
+
+//Value Computed by CMake
+OpenCV_part5_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+OpenCV_part5_SOURCE_DIR:STATIC=/home/yjh/kubig2025/opencv/part5
+
+//Value Computed by CMake
 day1_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/c_example/day1
 
 //Value Computed by CMake
@@ -453,7 +462,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

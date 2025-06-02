@@ -122,36 +122,7 @@
 			"path" : "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
-			"path" : "opencv/part3/CMakeLists.txt"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake"
-		},
-		{
-			"path" : "opencv/part4/CMakeLists.txt"
+			"path" : "opencv/part5/CMakeLists.txt"
 		},
 		{
 			"isExternal" : true,

@@ -1,97 +1,17 @@
 [
 {
   "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/22_brightness.dir/22_brightness.cpp.o -c /home/yjh/kubig2025/opencv/part3/22_brightness.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part3/22_brightness.cpp"
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/41_cascade_face.dir/41_cascade_face.cpp.o -c /home/yjh/kubig2025/opencv/part5/41_cascade_face.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/41_cascade_face.cpp"
 },
 {
   "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/23_histogram.dir/23_histogram.cpp.o -c /home/yjh/kubig2025/opencv/part3/23_histogram.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part3/23_histogram.cpp"
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/42_cascade_cam.dir/42_cascade_cam.cpp.o -c /home/yjh/kubig2025/opencv/part5/42_cascade_cam.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/42_cascade_cam.cpp"
 },
 {
   "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/24_arithmetic.dir/24_arithmetic.cpp.o -c /home/yjh/kubig2025/opencv/part3/24_arithmetic.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part3/24_arithmetic.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/25_cam_histo.dir/25_cam_histo.cpp.o -c /home/yjh/kubig2025/opencv/part3/25_cam_histo.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part3/25_cam_histo.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/26_filter.dir/26_filter.cpp.o -c /home/yjh/kubig2025/opencv/part3/26_filter.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part3/26_filter.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/27_bilateral.dir/27_bilateral.cpp.o -c /home/yjh/kubig2025/opencv/part3/27_bilateral.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part3/27_bilateral.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part3/CMakeFiles/28_median.dir/28_median.cpp.o -c /home/yjh/kubig2025/opencv/part3/28_median.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part3/28_median.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/29_affine.dir/29_affine.cpp.o -c /home/yjh/kubig2025/opencv/part4/29_affine.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/29_affine.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/30_perspective.dir/30_perspective.cpp.o -c /home/yjh/kubig2025/opencv/part4/30_perspective.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/30_perspective.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/31_sobel.dir/31_sobel.cpp.o -c /home/yjh/kubig2025/opencv/part4/31_sobel.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/31_sobel.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/32_canny.dir/32_canny.cpp.o -c /home/yjh/kubig2025/opencv/part4/32_canny.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/32_canny.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/33_hougline.dir/33_hougline.cpp.o -c /home/yjh/kubig2025/opencv/part4/33_hougline.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/33_hougline.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/34_hougCircle.dir/34_hougCircle.cpp.o -c /home/yjh/kubig2025/opencv/part4/34_hougCircle.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/34_hougCircle.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/35_color_split.dir/35_color_split.cpp.o -c /home/yjh/kubig2025/opencv/part4/35_color_split.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/35_color_split.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/36_inrange.dir/36_inrange.cpp.o -c /home/yjh/kubig2025/opencv/part4/36_inrange.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/36_inrange.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/37_threshold.dir/37_threshold.cpp.o -c /home/yjh/kubig2025/opencv/part4/37_threshold.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/37_threshold.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/38_morphology.dir/38_morphology.cpp.o -c /home/yjh/kubig2025/opencv/part4/38_morphology.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/38_morphology.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/39_labeling.dir/39_labeling.cpp.o -c /home/yjh/kubig2025/opencv/part4/39_labeling.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/39_labeling.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part4/CMakeFiles/40_follow_color_paper.dir/40_follow_color_paper.cpp.o -c /home/yjh/kubig2025/opencv/part4/40_follow_color_paper.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part4/40_follow_color_paper.cpp"
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/43_hog.dir/43_hog.cpp.o -c /home/yjh/kubig2025/opencv/part5/43_hog.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/43_hog.cpp"
 }
 ]

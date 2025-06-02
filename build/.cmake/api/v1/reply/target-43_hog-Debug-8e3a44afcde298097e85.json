@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "opencv/part3/25_cam_histo"
+			"path" : "opencv/part5/43_hog"
 		}
 	],
 	"backtrace" : 1,
@@ -15,7 +15,7 @@
 		],
 		"files" : 
 		[
-			"opencv/part3/CMakeLists.txt"
+			"opencv/part5/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -60,7 +60,7 @@
 			]
 		}
 	],
-	"id" : "25_cam_histo::@16c8c5003ef66cd84fd9",
+	"id" : "43_hog::@d7cabcfa57482d75a13a",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -346,12 +346,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "25_cam_histo",
-	"nameOnDisk" : "25_cam_histo",
+	"name" : "43_hog",
+	"nameOnDisk" : "43_hog",
 	"paths" : 
 	{
-		"build" : "opencv/part3",
-		"source" : "opencv/part3"
+		"build" : "opencv/part5",
+		"source" : "opencv/part5"
 	},
 	"sourceGroups" : 
 	[
@@ -368,7 +368,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "opencv/part3/25_cam_histo.cpp",
+			"path" : "opencv/part5/43_hog.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
