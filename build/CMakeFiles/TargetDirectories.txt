@@ -3,5 +3,11 @@
 /home/yjh/kubig2025/build/opencv/part5/CMakeFiles/41_cascade_face.dir
 /home/yjh/kubig2025/build/opencv/part5/CMakeFiles/42_cascade_cam.dir
 /home/yjh/kubig2025/build/opencv/part5/CMakeFiles/43_hog.dir
+/home/yjh/kubig2025/build/opencv/part5/CMakeFiles/44_hog_compute.dir
+/home/yjh/kubig2025/build/opencv/part5/CMakeFiles/45_qrcode.dir
+/home/yjh/kubig2025/build/opencv/part5/CMakeFiles/46_aruco.dir
+/home/yjh/kubig2025/build/opencv/part5/CMakeFiles/47_harriscorner.dir
+/home/yjh/kubig2025/build/opencv/part5/CMakeFiles/48_fast_cam.dir
+/home/yjh/kubig2025/build/opencv/part5/CMakeFiles/49_matching.dir
 /home/yjh/kubig2025/build/opencv/part5/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part5/CMakeFiles/rebuild_cache.dir

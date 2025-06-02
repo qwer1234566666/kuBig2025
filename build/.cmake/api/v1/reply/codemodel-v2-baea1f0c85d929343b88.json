@@ -32,7 +32,13 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
 					]
 				}
 			],
@@ -61,7 +67,13 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
 					]
 				}
 			],
@@ -86,6 +98,48 @@
 					"id" : "43_hog::@d7cabcfa57482d75a13a",
 					"jsonFile" : "target-43_hog-Debug-8e3a44afcde298097e85.json",
 					"name" : "43_hog",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "44_hog_compute::@d7cabcfa57482d75a13a",
+					"jsonFile" : "target-44_hog_compute-Debug-9ad3ec75f23181717051.json",
+					"name" : "44_hog_compute",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "45_qrcode::@d7cabcfa57482d75a13a",
+					"jsonFile" : "target-45_qrcode-Debug-dd862c833b13e71bb3c9.json",
+					"name" : "45_qrcode",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "46_aruco::@d7cabcfa57482d75a13a",
+					"jsonFile" : "target-46_aruco-Debug-0e863a22e11e5ae9bb2a.json",
+					"name" : "46_aruco",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "47_harriscorner::@d7cabcfa57482d75a13a",
+					"jsonFile" : "target-47_harriscorner-Debug-8a9cef262410eb465f00.json",
+					"name" : "47_harriscorner",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "48_fast_cam::@d7cabcfa57482d75a13a",
+					"jsonFile" : "target-48_fast_cam-Debug-8320bd446e04b9c7f606.json",
+					"name" : "48_fast_cam",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "49_matching::@d7cabcfa57482d75a13a",
+					"jsonFile" : "target-49_matching-Debug-981f9c6999fcaf3a1696.json",
+					"name" : "49_matching",
 					"projectIndex" : 1
 				}
 			]

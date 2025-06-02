@@ -13,5 +13,35 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/43_hog.dir/43_hog.cpp.o -c /home/yjh/kubig2025/opencv/part5/43_hog.cpp",
   "file": "/home/yjh/kubig2025/opencv/part5/43_hog.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/44_hog_compute.dir/44_hog_compute.cpp.o -c /home/yjh/kubig2025/opencv/part5/44_hog_compute.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/44_hog_compute.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/45_qrcode.dir/45_qrcode.cpp.o -c /home/yjh/kubig2025/opencv/part5/45_qrcode.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/45_qrcode.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/46_aruco.dir/46_aruco.cpp.o -c /home/yjh/kubig2025/opencv/part5/46_aruco.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/46_aruco.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/47_harriscorner.dir/47_harriscorner.cpp.o -c /home/yjh/kubig2025/opencv/part5/47_harriscorner.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/47_harriscorner.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/48_fast_cam.dir/48_fast_cam.cpp.o -c /home/yjh/kubig2025/opencv/part5/48_fast_cam.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/48_fast_cam.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/49_matching.dir/49_matching.cpp.o -c /home/yjh/kubig2025/opencv/part5/49_matching.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/49_matching.cpp"
 }
 ]
