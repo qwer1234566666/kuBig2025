@@ -43,5 +43,10 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/49_matching.dir/49_matching.cpp.o -c /home/yjh/kubig2025/opencv/part5/49_matching.cpp",
   "file": "/home/yjh/kubig2025/opencv/part5/49_matching.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/50_matirxMachinLearning.dir/50_matirxMachinLearning.cpp.o -c /home/yjh/kubig2025/opencv/part5/50_matirxMachinLearning.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/50_matirxMachinLearning.cpp"
 }
 ]

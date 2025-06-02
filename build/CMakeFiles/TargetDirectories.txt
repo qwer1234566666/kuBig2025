@@ -9,5 +9,6 @@
 /home/yjh/kubig2025/build/opencv/part5/CMakeFiles/47_harriscorner.dir
 /home/yjh/kubig2025/build/opencv/part5/CMakeFiles/48_fast_cam.dir
 /home/yjh/kubig2025/build/opencv/part5/CMakeFiles/49_matching.dir
+/home/yjh/kubig2025/build/opencv/part5/CMakeFiles/50_matirxMachinLearning.dir
 /home/yjh/kubig2025/build/opencv/part5/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part5/CMakeFiles/rebuild_cache.dir
