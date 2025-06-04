@@ -39,7 +39,9 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10,
+						11
 					]
 				}
 			],
@@ -75,7 +77,9 @@
 						6,
 						7,
 						8,
-						9
+						9,
+						10,
+						11
 					]
 				}
 			],
@@ -146,9 +150,23 @@
 				},
 				{
 					"directoryIndex" : 1,
+					"id" : "50_functionML::@d7cabcfa57482d75a13a",
+					"jsonFile" : "target-50_functionML-Debug-b6d6dc547b62232aa4b5.json",
+					"name" : "50_functionML",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
 					"id" : "50_matirxMachinLearning::@d7cabcfa57482d75a13a",
 					"jsonFile" : "target-50_matirxMachinLearning-Debug-2490fe29d861f51c1b73.json",
 					"name" : "50_matirxMachinLearning",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "51_hand_pose::@d7cabcfa57482d75a13a",
+					"jsonFile" : "target-51_hand_pose-Debug-3ee12a69b7312b3d2910.json",
+					"name" : "51_hand_pose",
 					"projectIndex" : 1
 				}
 			]

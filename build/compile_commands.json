@@ -46,7 +46,17 @@
 },
 {
   "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/50_functionML.dir/50_functionML.cpp.o -c /home/yjh/kubig2025/opencv/part5/50_functionML.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/50_functionML.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/50_matirxMachinLearning.dir/50_matirxMachinLearning.cpp.o -c /home/yjh/kubig2025/opencv/part5/50_matirxMachinLearning.cpp",
   "file": "/home/yjh/kubig2025/opencv/part5/50_matirxMachinLearning.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/51_hand_pose.dir/51_hand_pose.cpp.o -c /home/yjh/kubig2025/opencv/part5/51_hand_pose.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part5/51_hand_pose.cpp"
 }
 ]
