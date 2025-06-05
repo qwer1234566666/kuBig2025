@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "opencv/part6",
+					"jsonFile" : "directory-opencv.part6-Debug-0a6231629d7a6ba4587d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "opencv/part6",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MainProject"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "OpenCV_part6",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "51_hand_pose::@232bfb499939fb868c90",
+					"jsonFile" : "target-51_hand_pose-Debug-eaa45d0b61464c44a2da.json",
+					"name" : "51_hand_pose",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "52_hand_pose_video::@232bfb499939fb868c90",
+					"jsonFile" : "target-52_hand_pose_video-Debug-7cad94b8499c16a5e6ed.json",
+					"name" : "52_hand_pose_video",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "54_open_pose_image::@232bfb499939fb868c90",
+					"jsonFile" : "target-54_open_pose_image-Debug-83727a3af2c8862f7d50.json",
+					"name" : "54_open_pose_image",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "56_open_pose_cam::@232bfb499939fb868c90",
+					"jsonFile" : "target-56_open_pose_cam-Debug-09e5dfb633f77f4d1bd4.json",
+					"name" : "56_open_pose_cam",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yjh/kubig2025/build",
+		"source" : "/home/yjh/kubig2025"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

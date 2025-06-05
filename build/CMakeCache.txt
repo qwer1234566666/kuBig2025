@@ -272,6 +272,15 @@ OpenCV_part5_IS_TOP_LEVEL:STATIC=OFF
 OpenCV_part5_SOURCE_DIR:STATIC=/home/yjh/kubig2025/opencv/part5
 
 //Value Computed by CMake
+OpenCV_part6_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/opencv/part6
+
+//Value Computed by CMake
+OpenCV_part6_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+OpenCV_part6_SOURCE_DIR:STATIC=/home/yjh/kubig2025/opencv/part6
+
+//Value Computed by CMake
 day1_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/c_example/day1
 
 //Value Computed by CMake

@@ -122,7 +122,7 @@
 			"path" : "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
-			"path" : "opencv/part5/CMakeLists.txt"
+			"path" : "opencv/part6/CMakeLists.txt"
 		},
 		{
 			"isExternal" : true,

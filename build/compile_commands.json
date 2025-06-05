@@ -1,62 +1,22 @@
 [
 {
   "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/41_cascade_face.dir/41_cascade_face.cpp.o -c /home/yjh/kubig2025/opencv/part5/41_cascade_face.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/41_cascade_face.cpp"
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part6/CMakeFiles/51_hand_pose.dir/51_hand_pose.cpp.o -c /home/yjh/kubig2025/opencv/part6/51_hand_pose.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part6/51_hand_pose.cpp"
 },
 {
   "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/42_cascade_cam.dir/42_cascade_cam.cpp.o -c /home/yjh/kubig2025/opencv/part5/42_cascade_cam.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/42_cascade_cam.cpp"
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part6/CMakeFiles/52_hand_pose_video.dir/52_hand_pose_video.cpp.o -c /home/yjh/kubig2025/opencv/part6/52_hand_pose_video.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part6/52_hand_pose_video.cpp"
 },
 {
   "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/43_hog.dir/43_hog.cpp.o -c /home/yjh/kubig2025/opencv/part5/43_hog.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/43_hog.cpp"
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part6/CMakeFiles/54_open_pose_image.dir/54_open_pose_image.cpp.o -c /home/yjh/kubig2025/opencv/part6/54_open_pose_image.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part6/54_open_pose_image.cpp"
 },
 {
   "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/44_hog_compute.dir/44_hog_compute.cpp.o -c /home/yjh/kubig2025/opencv/part5/44_hog_compute.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/44_hog_compute.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/45_qrcode.dir/45_qrcode.cpp.o -c /home/yjh/kubig2025/opencv/part5/45_qrcode.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/45_qrcode.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/46_aruco.dir/46_aruco.cpp.o -c /home/yjh/kubig2025/opencv/part5/46_aruco.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/46_aruco.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/47_harriscorner.dir/47_harriscorner.cpp.o -c /home/yjh/kubig2025/opencv/part5/47_harriscorner.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/47_harriscorner.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/48_fast_cam.dir/48_fast_cam.cpp.o -c /home/yjh/kubig2025/opencv/part5/48_fast_cam.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/48_fast_cam.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/49_matching.dir/49_matching.cpp.o -c /home/yjh/kubig2025/opencv/part5/49_matching.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/49_matching.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/50_functionML.dir/50_functionML.cpp.o -c /home/yjh/kubig2025/opencv/part5/50_functionML.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/50_functionML.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/50_matirxMachinLearning.dir/50_matirxMachinLearning.cpp.o -c /home/yjh/kubig2025/opencv/part5/50_matirxMachinLearning.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/50_matirxMachinLearning.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part5/CMakeFiles/51_hand_pose.dir/51_hand_pose.cpp.o -c /home/yjh/kubig2025/opencv/part5/51_hand_pose.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part5/51_hand_pose.cpp"
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part6/CMakeFiles/56_open_pose_cam.dir/56_open_pose_cam.cpp.o -c /home/yjh/kubig2025/opencv/part6/56_open_pose_cam.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part6/56_open_pose_cam.cpp"
 }
 ]
