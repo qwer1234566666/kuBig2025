@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score
 from sklearn.neural_network import MLPClassifier
 
-df = pd.read_csv("/home/yjh/kubig2025/orange33/healthcare-dataset-3.csv")
+df = pd.read_csv("/home/yjh/kubig2025/orange3/healthcare-dataset-3.csv")
 print(df.shape)
 print(df.info())
 print(df.columns)
