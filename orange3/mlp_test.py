@@ -15,5 +15,5 @@ y = df[df.columns[5]]
 X = df.drop(df.columns[5], axis=1)
 clf_mlp.fit(X, y)
 pred_y = clf_mlp.predict(X)
-accuracy = accuracy_score(y, pred_y)
+accuracy = accuracy_score(y, pred_y)    
 print(accuracy)
