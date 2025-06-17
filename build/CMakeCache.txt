@@ -280,6 +280,12 @@ OpenCV_part6_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 OpenCV_part6_SOURCE_DIR:STATIC=/home/yjh/kubig2025/opencv/part6
 
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Value Computed by CMake
 day1_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/c_example/day1
 
@@ -306,6 +312,15 @@ day3_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 day3_SOURCE_DIR:STATIC=/home/yjh/kubig2025/c_example/day3
+
+//Value Computed by CMake
+ml_dl_python_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/ml_dl_python
+
+//Value Computed by CMake
+ml_dl_python_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ml_dl_python_SOURCE_DIR:STATIC=/home/yjh/kubig2025/ml_dl_python
 
 //Value Computed by CMake
 multiProcess_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/network/multiProcess
@@ -361,6 +376,9 @@ network_util_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 network_util_SOURCE_DIR:STATIC=/home/yjh/kubig2025/network/util
 
+//Path to a library.
+pkgcfg_lib_ZMQ_zmq:FILEPATH=/usr/lib/x86_64-linux-gnu/libzmq.so
+
 //Value Computed by CMake
 stl_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/smartpoint
 
@@ -369,6 +387,15 @@ stl_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 stl_SOURCE_DIR:STATIC=/home/yjh/kubig2025/smartpoint
+
+//Value Computed by CMake
+zmq_example_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/ml_dl_python/dl_module
+
+//Value Computed by CMake
+zmq_example_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+zmq_example_SOURCE_DIR:STATIC=/home/yjh/kubig2025/ml_dl_python/dl_module
 
 
 ########################
@@ -471,7 +498,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -516,4 +543,50 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.5.4()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v1.8.0()]
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+ZMQ_CFLAGS:INTERNAL=-isystem;/usr/include/mit-krb5;-I/usr/include/pgm-5.3;-I/usr/include/libxml2
+ZMQ_CFLAGS_I:INTERNAL=
+ZMQ_CFLAGS_OTHER:INTERNAL=-isystem;/usr/include/mit-krb5
+ZMQ_FOUND:INTERNAL=1
+ZMQ_INCLUDEDIR:INTERNAL=/usr/include
+ZMQ_INCLUDE_DIRS:INTERNAL=/usr/include/pgm-5.3;/usr/include/libxml2
+ZMQ_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lzmq
+ZMQ_LDFLAGS_OTHER:INTERNAL=
+ZMQ_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+ZMQ_LIBRARIES:INTERNAL=zmq
+ZMQ_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+ZMQ_LIBS:INTERNAL=
+ZMQ_LIBS_L:INTERNAL=
+ZMQ_LIBS_OTHER:INTERNAL=
+ZMQ_LIBS_PATHS:INTERNAL=
+ZMQ_MODULE_NAME:INTERNAL=libzmq
+ZMQ_PREFIX:INTERNAL=/usr
+ZMQ_STATIC_CFLAGS:INTERNAL=-isystem;/usr/include/mit-krb5;-I/usr/include/pgm-5.3;-I/usr/include/libxml2
+ZMQ_STATIC_CFLAGS_I:INTERNAL=
+ZMQ_STATIC_CFLAGS_OTHER:INTERNAL=-isystem;/usr/include/mit-krb5
+ZMQ_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/pgm-5.3;/usr/include/libxml2
+ZMQ_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lzmq;-lstdc++;-lrt;-L/usr/lib/x86_64-linux-gnu/mit-krb5;-lgssapi_krb5;-L/usr/lib/x86_64-linux-gnu/mit-krb5;-lkrb5;-lk5crypto;-lcom_err;-lkrb5support;-lsodium;-pthread;-lpgm;-lpthread;-lm;-lnorm;libprotokit.a;-L/usr/lib/x86_64-linux-gnu;-lxml2;-licui18n;-licuuc;-licudata;-lz;-llzma;-lm;-lbsd;-lmd
+ZMQ_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;libprotokit.a
+ZMQ_STATIC_LIBDIR:INTERNAL=
+ZMQ_STATIC_LIBRARIES:INTERNAL=zmq;stdc++;rt;gssapi_krb5;krb5;k5crypto;com_err;krb5support;sodium;pgm;pthread;m;norm;xml2;icui18n;icuuc;icudata;z;lzma;m;bsd;md
+ZMQ_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu/mit-krb5;/usr/lib/x86_64-linux-gnu/mit-krb5;/usr/lib/x86_64-linux-gnu
+ZMQ_STATIC_LIBS:INTERNAL=
+ZMQ_STATIC_LIBS_L:INTERNAL=
+ZMQ_STATIC_LIBS_OTHER:INTERNAL=
+ZMQ_STATIC_LIBS_PATHS:INTERNAL=
+ZMQ_VERSION:INTERNAL=4.3.4
+ZMQ_libzmq_INCLUDEDIR:INTERNAL=
+ZMQ_libzmq_LIBDIR:INTERNAL=
+ZMQ_libzmq_PREFIX:INTERNAL=
+ZMQ_libzmq_VERSION:INTERNAL=
+__pkg_config_arguments_ZMQ:INTERNAL=REQUIRED;libzmq
+__pkg_config_checked_ZMQ:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_ZMQ_zmq
+pkgcfg_lib_ZMQ_zmq-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

@@ -228,6 +228,100 @@ build opencv/part6/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build opencv/part6/rebuild_cache: phony opencv/part6/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/yjh/kubig2025/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target zmq_server
+
+
+#############################################
+# Order-only phony target for zmq_server
+
+build cmake_object_order_depends_target_zmq_server: phony || ml_dl_python/dl_module/CMakeFiles/zmq_server.dir
+
+build ml_dl_python/dl_module/CMakeFiles/zmq_server.dir/zmq_server.cpp.o: CXX_COMPILER__zmq_server_Debug /home/yjh/kubig2025/ml_dl_python/dl_module/zmq_server.cpp || cmake_object_order_depends_target_zmq_server
+  DEP_FILE = ml_dl_python/dl_module/CMakeFiles/zmq_server.dir/zmq_server.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = ml_dl_python/dl_module/CMakeFiles/zmq_server.dir
+  OBJECT_FILE_DIR = ml_dl_python/dl_module/CMakeFiles/zmq_server.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target zmq_server
+
+
+#############################################
+# Link the executable ml_dl_python/dl_module/zmq_server
+
+build ml_dl_python/dl_module/zmq_server: CXX_EXECUTABLE_LINKER__zmq_server_Debug ml_dl_python/dl_module/CMakeFiles/zmq_server.dir/zmq_server.cpp.o
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = -lzmq
+  OBJECT_DIR = ml_dl_python/dl_module/CMakeFiles/zmq_server.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ml_dl_python/dl_module/zmq_server
+  TARGET_PDB = zmq_server.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target zmq_client
+
+
+#############################################
+# Order-only phony target for zmq_client
+
+build cmake_object_order_depends_target_zmq_client: phony || ml_dl_python/dl_module/CMakeFiles/zmq_client.dir
+
+build ml_dl_python/dl_module/CMakeFiles/zmq_client.dir/zmq_client.cpp.o: CXX_COMPILER__zmq_client_Debug /home/yjh/kubig2025/ml_dl_python/dl_module/zmq_client.cpp || cmake_object_order_depends_target_zmq_client
+  DEP_FILE = ml_dl_python/dl_module/CMakeFiles/zmq_client.dir/zmq_client.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = ml_dl_python/dl_module/CMakeFiles/zmq_client.dir
+  OBJECT_FILE_DIR = ml_dl_python/dl_module/CMakeFiles/zmq_client.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target zmq_client
+
+
+#############################################
+# Link the executable ml_dl_python/dl_module/zmq_client
+
+build ml_dl_python/dl_module/zmq_client: CXX_EXECUTABLE_LINKER__zmq_client_Debug ml_dl_python/dl_module/CMakeFiles/zmq_client.dir/zmq_client.cpp.o
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = -lzmq
+  OBJECT_DIR = ml_dl_python/dl_module/CMakeFiles/zmq_client.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ml_dl_python/dl_module/zmq_client
+  TARGET_PDB = zmq_client.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build ml_dl_python/dl_module/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/yjh/kubig2025/build/ml_dl_python/dl_module && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build ml_dl_python/dl_module/edit_cache: phony ml_dl_python/dl_module/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build ml_dl_python/dl_module/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/yjh/kubig2025/build/ml_dl_python/dl_module && /usr/bin/cmake --regenerate-during-build -S/home/yjh/kubig2025 -B/home/yjh/kubig2025/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build ml_dl_python/dl_module/rebuild_cache: phony ml_dl_python/dl_module/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build 51_hand_pose: phony opencv/part6/51_hand_pose
@@ -238,6 +332,10 @@ build 54_open_pose_image: phony opencv/part6/54_open_pose_image
 
 build 56_open_pose_cam: phony opencv/part6/56_open_pose_cam
 
+build zmq_client: phony ml_dl_python/dl_module/zmq_client
+
+build zmq_server: phony ml_dl_python/dl_module/zmq_server
+
 # =============================================================================
 # Folder targets.
 
@@ -246,7 +344,14 @@ build 56_open_pose_cam: phony opencv/part6/56_open_pose_cam
 #############################################
 # Folder: /home/yjh/kubig2025/build
 
-build all: phony opencv/part6/all
+build all: phony opencv/part6/all ml_dl_python/dl_module/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/yjh/kubig2025/build/ml_dl_python/dl_module
+
+build ml_dl_python/dl_module/all: phony ml_dl_python/dl_module/zmq_server ml_dl_python/dl_module/zmq_client
 
 # =============================================================================
 
@@ -262,14 +367,14 @@ build opencv/part6/all: phony opencv/part6/51_hand_pose opencv/part6/52_hand_pos
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../opencv/part6/CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules.cmake /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../ml_dl_python/dl_module/CMakeLists.txt ../opencv/part6/CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules.cmake /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../opencv/part6/CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules.cmake /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../ml_dl_python/dl_module/CMakeLists.txt ../opencv/part6/CMakeLists.txt /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake /usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules.cmake /usr/share/cmake-3.22/Modules/CMakeCInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Compiler/GNU.cmake /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.22/Modules/FindPackageMessage.cmake /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.22/Modules/Platform/Linux.cmake /usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.22.1/CMakeCCompiler.cmake CMakeFiles/3.22.1/CMakeCXXCompiler.cmake CMakeFiles/3.22.1/CMakeSystem.cmake: phony
 
 
 #############################################

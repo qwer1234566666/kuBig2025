@@ -6,3 +6,7 @@
 /home/yjh/kubig2025/build/opencv/part6/CMakeFiles/56_open_pose_cam.dir
 /home/yjh/kubig2025/build/opencv/part6/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part6/CMakeFiles/rebuild_cache.dir
+/home/yjh/kubig2025/build/ml_dl_python/dl_module/CMakeFiles/zmq_server.dir
+/home/yjh/kubig2025/build/ml_dl_python/dl_module/CMakeFiles/zmq_client.dir
+/home/yjh/kubig2025/build/ml_dl_python/dl_module/CMakeFiles/edit_cache.dir
+/home/yjh/kubig2025/build/ml_dl_python/dl_module/CMakeFiles/rebuild_cache.dir

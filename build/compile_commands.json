@@ -18,5 +18,15 @@
   "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part6/CMakeFiles/56_open_pose_cam.dir/56_open_pose_cam.cpp.o -c /home/yjh/kubig2025/opencv/part6/56_open_pose_cam.cpp",
   "file": "/home/yjh/kubig2025/opencv/part6/56_open_pose_cam.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -g -o ml_dl_python/dl_module/CMakeFiles/zmq_server.dir/zmq_server.cpp.o -c /home/yjh/kubig2025/ml_dl_python/dl_module/zmq_server.cpp",
+  "file": "/home/yjh/kubig2025/ml_dl_python/dl_module/zmq_server.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -g -o ml_dl_python/dl_module/CMakeFiles/zmq_client.dir/zmq_client.cpp.o -c /home/yjh/kubig2025/ml_dl_python/dl_module/zmq_client.cpp",
+  "file": "/home/yjh/kubig2025/ml_dl_python/dl_module/zmq_client.cpp"
 }
 ]
