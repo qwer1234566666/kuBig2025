@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "opencv/part7",
+					"jsonFile" : "directory-opencv.part7-Debug-534688e0d3487b317364.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "opencv/part7",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "ml_dl_python/dl_module",
+					"jsonFile" : "directory-ml_dl_python.dl_module-Debug-99a30f9e40b812dc2b32.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "ml_dl_python/dl_module",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MainProject"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "OpenCV_part7",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "zmq_example",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "59_mnist_cnn::@a61d2c79caf20a32c398",
+					"jsonFile" : "target-59_mnist_cnn-Debug-97f6b4b8087980c0e10a.json",
+					"name" : "59_mnist_cnn",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "zmq_client::@028cc5b292ac0531cf4c",
+					"jsonFile" : "target-zmq_client-Debug-6f03e3ff2c732fa4b6df.json",
+					"name" : "zmq_client",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "zmq_server::@028cc5b292ac0531cf4c",
+					"jsonFile" : "target-zmq_server-Debug-406f519cc103e7cdf498.json",
+					"name" : "zmq_server",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yjh/kubig2025/build",
+		"source" : "/home/yjh/kubig2025"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

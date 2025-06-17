@@ -1,23 +1,8 @@
 [
 {
   "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part6/CMakeFiles/51_hand_pose.dir/51_hand_pose.cpp.o -c /home/yjh/kubig2025/opencv/part6/51_hand_pose.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part6/51_hand_pose.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part6/CMakeFiles/52_hand_pose_video.dir/52_hand_pose_video.cpp.o -c /home/yjh/kubig2025/opencv/part6/52_hand_pose_video.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part6/52_hand_pose_video.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part6/CMakeFiles/54_open_pose_image.dir/54_open_pose_image.cpp.o -c /home/yjh/kubig2025/opencv/part6/54_open_pose_image.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part6/54_open_pose_image.cpp"
-},
-{
-  "directory": "/home/yjh/kubig2025/build",
-  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part6/CMakeFiles/56_open_pose_cam.dir/56_open_pose_cam.cpp.o -c /home/yjh/kubig2025/opencv/part6/56_open_pose_cam.cpp",
-  "file": "/home/yjh/kubig2025/opencv/part6/56_open_pose_cam.cpp"
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part7/CMakeFiles/59_mnist_cnn.dir/59_mnist_cnn.cpp.o -c /home/yjh/kubig2025/opencv/part7/59_mnist_cnn.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part7/59_mnist_cnn.cpp"
 },
 {
   "directory": "/home/yjh/kubig2025/build",

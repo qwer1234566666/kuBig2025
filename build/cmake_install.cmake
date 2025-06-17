@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yjh/kubig2025/build/opencv/part6/cmake_install.cmake")
+  include("/home/yjh/kubig2025/build/opencv/part7/cmake_install.cmake")
   include("/home/yjh/kubig2025/build/ml_dl_python/dl_module/cmake_install.cmake")
 
 endif()

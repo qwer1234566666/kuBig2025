@@ -280,6 +280,15 @@ OpenCV_part6_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 OpenCV_part6_SOURCE_DIR:STATIC=/home/yjh/kubig2025/opencv/part6
 
+//Value Computed by CMake
+OpenCV_part7_BINARY_DIR:STATIC=/home/yjh/kubig2025/build/opencv/part7
+
+//Value Computed by CMake
+OpenCV_part7_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+OpenCV_part7_SOURCE_DIR:STATIC=/home/yjh/kubig2025/opencv/part7
+
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
