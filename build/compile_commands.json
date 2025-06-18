@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part7/CMakeFiles/60_google_vision.dir/60_google_vision.cpp.o -c /home/yjh/kubig2025/opencv/part7/60_google_vision.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part7/60_google_vision.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -g -o ml_dl_python/dl_module/CMakeFiles/zmq_server.dir/zmq_server.cpp.o -c /home/yjh/kubig2025/ml_dl_python/dl_module/zmq_server.cpp",
   "file": "/home/yjh/kubig2025/ml_dl_python/dl_module/zmq_server.cpp"
 },

@@ -31,7 +31,8 @@
 					"source" : "opencv/part7",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				},
 				{
@@ -46,8 +47,8 @@
 					"source" : "ml_dl_python/dl_module",
 					"targetIndexes" : 
 					[
-						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -75,7 +76,8 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				},
 				{
@@ -87,8 +89,8 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -99,6 +101,13 @@
 					"id" : "59_mnist_cnn::@a61d2c79caf20a32c398",
 					"jsonFile" : "target-59_mnist_cnn-Debug-97f6b4b8087980c0e10a.json",
 					"name" : "59_mnist_cnn",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "60_google_vision::@a61d2c79caf20a32c398",
+					"jsonFile" : "target-60_google_vision-Debug-0d194350d877aa9f9cc4.json",
+					"name" : "60_google_vision",
 					"projectIndex" : 1
 				},
 				{
