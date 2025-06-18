@@ -3,6 +3,7 @@
 /home/yjh/kubig2025/build/opencv/part7/CMakeFiles/59_mnist_cnn.dir
 /home/yjh/kubig2025/build/opencv/part7/CMakeFiles/60_google_vision.dir
 /home/yjh/kubig2025/build/opencv/part7/CMakeFiles/61_google_camera.dir
+/home/yjh/kubig2025/build/opencv/part7/CMakeFiles/62_dnnface.dir
 /home/yjh/kubig2025/build/opencv/part7/CMakeFiles/edit_cache.dir
 /home/yjh/kubig2025/build/opencv/part7/CMakeFiles/rebuild_cache.dir
 /home/yjh/kubig2025/build/ml_dl_python/dl_module/CMakeFiles/zmq_server.dir

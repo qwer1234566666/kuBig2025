@@ -33,7 +33,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				},
 				{
@@ -48,8 +49,8 @@
 					"source" : "ml_dl_python/dl_module",
 					"targetIndexes" : 
 					[
-						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -79,7 +80,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				},
 				{
@@ -91,8 +93,8 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -117,6 +119,13 @@
 					"id" : "61_google_camera::@a61d2c79caf20a32c398",
 					"jsonFile" : "target-61_google_camera-Debug-c1f465a4b8ce9658a185.json",
 					"name" : "61_google_camera",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "62_dnnface::@a61d2c79caf20a32c398",
+					"jsonFile" : "target-62_dnnface-Debug-aace15dee81199fa3a5a.json",
+					"name" : "62_dnnface",
 					"projectIndex" : 1
 				},
 				{

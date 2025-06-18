@@ -16,6 +16,11 @@
 },
 {
   "directory": "/home/yjh/kubig2025/build",
+  "command": "/usr/bin/c++ -isystem /usr/include/opencv4 -g -o opencv/part7/CMakeFiles/62_dnnface.dir/62_dnnface.cpp.o -c /home/yjh/kubig2025/opencv/part7/62_dnnface.cpp",
+  "file": "/home/yjh/kubig2025/opencv/part7/62_dnnface.cpp"
+},
+{
+  "directory": "/home/yjh/kubig2025/build",
   "command": "/usr/bin/c++ -g -o ml_dl_python/dl_module/CMakeFiles/zmq_server.dir/zmq_server.cpp.o -c /home/yjh/kubig2025/ml_dl_python/dl_module/zmq_server.cpp",
   "file": "/home/yjh/kubig2025/ml_dl_python/dl_module/zmq_server.cpp"
 },
