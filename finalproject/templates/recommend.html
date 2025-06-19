@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>추천 상의</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay">
+      {% if user %}
+        <div class="top-right">
+          <span class="greeting" style="color: white;">{{ user.nickname }} 님</span>
+          <a href="/logout"><button class="logout-btn">로그아웃</button></a>
+        </div>
+      {% endif %}
+
+      <div class="left-box">
+        <h2 class="title" style="text-align: left;">어울리는 상의를 선택해보세요</h2>
+        <img src="{{ photo }}" alt="업로드한 사진" width="200" style="margin: 20px 0;"><br>
+
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+          {% for item in items %}
+            <div>
+              <a href="/dress/{{ item.name }}">
+                <img src="{{ item.image }}" alt="{{ item.name }}" width="120"><br>
+                <span style="color: white;">{{ item.name }}</span>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

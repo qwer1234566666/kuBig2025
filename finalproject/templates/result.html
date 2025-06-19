@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>착용 결과</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay">
+      {% if user %}
+        <div class="top-right">
+          <span class="greeting" style="color: white;">{{ user.nickname }} 님</span>
+          <a href="/logout"><button class="logout-btn">로그아웃</button></a>
+        </div>
+      {% endif %}
+
+      <div class="left-box">
+        <h2 class="title" style="text-align: left;">{{ item }} 착용 결과입니다</h2>
+        <img src="{{ result }}" alt="합성 이미지" width="300" style="margin: 20px 0;"><br>
+        <a href="/recommend"><button class="upload-btn">다른 옷 보기</button></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
