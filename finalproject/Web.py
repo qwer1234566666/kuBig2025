@@ -8,17 +8,18 @@ from datetime import timedelta
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'your_secret_key')
-app.config['UPLOAD_FOLDER'] = 'static/uploads/'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mmm.db'
+
+# 절대 경로를 사용한 DB 경로 지정
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+db_path = os.path.join(BASE_DIR, 'mmm.db')
+app.config['UPLOAD_FOLDER'] = os.path.join(BASE_DIR, 'static/uploads/')
+app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{db_path}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.permanent_session_lifetime = timedelta(minutes=5)
 
 db = SQLAlchemy(app)
-
-# Ensure upload directory exists
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-# -------------------- DATABASE MODELS --------------------
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     kakao_id = db.Column(db.String(128), unique=True, nullable=False)
@@ -29,10 +30,11 @@ class Clothes(db.Model):
     name = db.Column(db.String(128), nullable=False)
     image_path = db.Column(db.String(256), nullable=False)
 
-# -------------------- INITIALIZE & SEED --------------------
 with app.app_context():
     db.create_all()
-    # Seed default clothes if none exist
+    from sqlalchemy import inspect
+    inspector = inspect(db.engine)
+    print("✅ DB 테이블 생성/확인 완료:", inspector.get_table_names())
     if Clothes.query.count() == 0:
         default_items = [
             Clothes(name='블레이저', image_path='static/clothes/blazer.png'),
@@ -41,8 +43,8 @@ with app.app_context():
         ]
         db.session.bulk_save_objects(default_items)
         db.session.commit()
+        print("✅ 기본 의상 아이템 시딩 완료")
 
-# -------------------- ROUTES --------------------
 @app.route('/')
 def home():
     user = session.get('user')
@@ -83,7 +85,7 @@ def oauth():
     token_response = requests.post(token_url, data=payload, headers=headers)
     token_json = token_response.json()
     if 'access_token' not in token_json:
-        print('카카오 토큰 에러 응답:', token_json)
+        print('🔴 카카오 토큰 에러 응답:', token_json)
         error_desc = token_json.get('error_description', str(token_json))
         return f"토큰 요청 실패: {error_desc}", 400
 
@@ -101,6 +103,7 @@ def oauth():
         user = User(kakao_id=kakao_id, nickname=nickname)
         db.session.add(user)
         db.session.commit()
+        print(f"✅ 신규 사용자 저장: {kakao_id}, {nickname}")
 
     session.permanent = True
     session['user'] = {'id': kakao_id, 'nickname': nickname}
@@ -139,7 +142,6 @@ def recommend():
     if not photo_path:
         return redirect(url_for('upload'))
     items = Clothes.query.all()
-    # Pass model attribute names to template
     return render_template('recommend.html', photo=photo_path, items=[{'name': i.name, 'image': i.image_path} for i in items], user=session.get('user'))
 
 @app.route('/dress/<item>')

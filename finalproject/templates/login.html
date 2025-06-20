@@ -16,9 +16,13 @@
         <a href="/logout"><button class="logout-btn">로그아웃</button></a>
       {% endif %}
     </div>
-    <div class="overlay">
+     <!-- 중앙 콘텐츠 영역 -->
+    <div class="hero-content">
       {% if user %}
-        <a href="/upload"><button class="upload-btn">사진 업로드 하러 가기</button></a>
+        <!-- 버튼 요소로 변경하여 클릭 가능하도록 설정 -->
+        <button class="btn upload-hero-btn" onclick="location.href='{{ url_for('upload') }}'">
+          사진 업로드 하러 가기
+        </button>
       {% endif %}
     </div>
   </div>
