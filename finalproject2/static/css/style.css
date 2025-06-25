@@ -118,3 +118,11 @@ img {
   max-width: 450px;
   pointer-events: auto;
 }
+
+.flash-messages {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ffe0e0;
+  border: 1px solid #ff8c8c;
+  border-radius: 5px;
+}

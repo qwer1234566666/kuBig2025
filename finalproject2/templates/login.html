@@ -2,29 +2,34 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Manners Maketh Man</title>
+  <title>로그인</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-  <div class="hero">
-    <div class="top-right">
-      {% if not user %}
-        <a href="/login"><button class="login-btn">로그인</button></a>
-        <a href="/signup"><button class="signup-btn">회원가입</button></a>
-      {% else %}
-        <span class="greeting">{{ user.nickname }} 님</span>
-        <a href="/logout"><button class="logout-btn">로그아웃</button></a>
+  <div class="form-container">
+    <h2>로그인</h2>
+
+    <!-- 🔔 Flash 메시지 표시 -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flash-messages">
+          {% for message in messages %}
+            <li style="color: red;">{{ message }}</li>
+          {% endfor %}
+        </ul>
       {% endif %}
-    </div>
-     <!-- 중앙 콘텐츠 영역 -->
-    <div class="hero-content">
-      {% if user %}
-        <!-- 버튼 요소로 변경하여 클릭 가능하도록 설정 -->
-        <button class="btn upload-hero-btn" onclick="location.href='{{ url_for('upload') }}'">
-          사진 업로드 하러 가기
-        </button>
-      {% endif %}
-    </div>
+    {% endwith %}
+
+    <form method="post">
+      <input type="text" name="username" placeholder="아이디" required><br>
+      <input type="password" name="password" placeholder="비밀번호" required><br>
+      <button type="submit">로그인</button>
+      <p style="margin-top:10px;">
+        <a href="{{ url_for('reset.reset_request') }}">비밀번호를 잊으셨나요?</a>
+      </p>
+    </form>
+    <p>또는</p>
+    <a href="/login/kakao"><button class="kakao-btn">카카오 로그인</button></a>
   </div>
 </body>
 </html>
