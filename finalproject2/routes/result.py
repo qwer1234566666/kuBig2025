@@ -15,11 +15,21 @@ def dress_post():
         return "옷이 선택되지 않았습니다", 400
 
     session['selected_item'] = selected_item
+    session['loading_stage'] = '가상 피팅'
     return redirect(url_for('result.loading'))
 
-# 로딩 화면 → Colab 호출 및 결과 페이지로 리디렉션
+# 로딩 화면 표시 (Colab 호출 전 단계)
 @result_bp.route('/dress/loading')
 def loading():
+    if 'user' not in session:
+        return redirect(url_for('index.index'))
+
+    stage = session.get('loading_stage', '처리')
+    return render_template('loading.html', stage=stage)
+
+# Colab 호출 및 결과 페이지로 리디렉션
+@result_bp.route('/dress/process')
+def process():
     if 'user' not in session:
         return redirect(url_for('index.index'))
 
