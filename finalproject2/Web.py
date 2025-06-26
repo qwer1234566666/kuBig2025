@@ -1,5 +1,6 @@
 # Web.py
 from flask import Flask
+from flask_migrate import Migrate 
 from models import db, User
 from routes import (
     index_bp, login_bp, signup_bp,
@@ -27,6 +28,7 @@ app.permanent_session_lifetime = timedelta(minutes=5)
 
 # DB 초기화
 db.init_app(app)
+migrate = Migrate(app, db)
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # DB 테이블 생성
@@ -35,10 +37,7 @@ with app.app_context():
     inspector = inspect(db.engine)
     print("✅ DB 테이블 생성/확인 완료:", inspector.get_table_names())
 
-print("EMAIL_USER:", os.environ.get("EMAIL_USER"))
-print("EMAIL_PASS:", os.environ.get("EMAIL_PASS"))
 
-    
 # Blueprint 등록
 app.register_blueprint(index_bp)
 app.register_blueprint(login_bp)
