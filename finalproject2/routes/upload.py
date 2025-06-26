@@ -1,5 +1,4 @@
-# routes/upload.py
-from flask import Blueprint, render_template, request, redirect, session, url_for, current_app
+from flask import Blueprint, render_template, request, redirect, session, url_for, current_app, flash
 from werkzeug.utils import secure_filename
 import os
 from models import db
@@ -9,7 +8,8 @@ upload_bp = Blueprint('upload', __name__)
 @upload_bp.route('/upload', methods=['GET', 'POST'])
 def upload():
     if 'user' not in session:
-        return redirect(url_for('index.index'))
+        flash("업로드하려면 먼저 로그인해주세요.")
+        return redirect(url_for('login.login_page'))
 
     if request.method == 'POST':
         if 'photo' not in request.files:
@@ -22,6 +22,7 @@ def upload():
         file_path = os.path.join(current_app.config['UPLOAD_FOLDER'], filename)
         file.save(file_path)
         session['photo_path'] = file_path
-        return redirect(url_for('recommend.recommend'))
+
+        return render_template('loading.html', stage='업로드된 이미지 적합성 체크', redirect_url=url_for('recommend.recommend'))
 
     return render_template('upload.html', user=session.get('user'))
