@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>로딩 중...</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <meta http-equiv="refresh" content="2;url={{ url_for('result.loading') }}">
+  <style>
+    body {
+      overflow: hidden;
+    }
+    .overlay {
+      pointer-events: none; /* 마우스 클릭 차단 */
+    }
+  </style>
+  <script>
+    document.addEventListener('keydown', function(e) {
+      e.preventDefault();
+    }, true);
+    document.addEventListener('click', function(e) {
+      e.preventDefault();
+    }, true);
+  </script>
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay">
+      <div class="left-box">
+        <h2 class="title">⏳ 가상 피팅을 준비 중입니다</h2>
+        <p style="color:white;">※조금 시간이 걸립니다. 기다려주세요.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
