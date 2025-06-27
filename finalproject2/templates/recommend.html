@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -48,5 +48,91 @@
   </div>
 </div>
 
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>추천 상의</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <style>
+    .recommend-section {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .image-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .cropped-img {
+      border: 2px solid white;
+      margin-top: 10px;
+    }
+    .original-img {
+      border: 1px solid #ddd;
+      margin-top: 10px;
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+<div class="hero">
+  <div class="overlay">
+    {% if user %}
+      <div class="top-right">
+        <span class="greeting" style="color: white;">{{ user.nickname }} 님</span>
+        <a href="/logout"><button class="logout-btn">로그아웃</button></a>
+      </div>
+    {% endif %}
+
+    <div class="left-box">
+      <h2 class="title">어울리는 상의를 선택해보세요</h2>
+
+      <div class="recommend-section">
+        <div class="image-box">
+          {% if cropped_img_url %}
+            <p style="color:white; font-size:14px;">[검출된 상반신]</p>
+            <img src="{{ cropped_img_url }}" width="200" class="cropped-img">
+          {% endif %}
+        </div>
+
+        <div class="image-box">
+          <p style="color:white; font-size:14px;">[원본 이미지]</p>
+          <img src="{{ url_for('static', filename=photo.split('static/')[-1]) }}" class="original-img">
+        </div>
+      </div>
+
+      {% if items %}
+        <form method="POST" action="{{ url_for('recommend.recommend') }}" style="margin-top: 30px;">
+          <div style="display:flex; flex-wrap:wrap; gap:20px;">
+            {% for item in items %}
+              <div>
+                <img src="{{ item.image }}" width="120"><br>
+                <input type="radio" name="clothes_img" value="{{ item.image }}" required>
+                <span style="color:white;">{{ item.name }}</span>
+              </div>
+            {% endfor %}
+          </div>
+          <button type="submit" class="upload-btn" style="margin-top:20px;">가상 피팅하기</button>
+        </form>
+      {% else %}
+        <p style="color:white;">추천된 옷이 없습니다. 다시 시도해주세요.</p>
+        <ul style="color:lightgray; font-size: 12px;">
+          <li>사진에 사람이 명확하게 보이지 않거나</li>
+          <li>분석이 충분히 수행되지 않았을 수 있습니다.</li>
+        </ul>
+      {% endif %}
+
+      <a href="{{ url_for('upload.upload') }}">
+        <button class="reupload-btn">다른 사진 업로드</button>
+      </a>
+    </div>
+  </div>
+</div>
 </body>
 </html>
