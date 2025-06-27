@@ -30,7 +30,7 @@ from flask import Blueprint, render_template, request, redirect, session, url_fo
 from werkzeug.utils import secure_filename
 import os
 from models import db
-from .upload_img_check import check_uploaded_image
+from test_python_only.upload_img_check import check_uploaded_image
 
 upload_bp = Blueprint('upload', __name__)
 
