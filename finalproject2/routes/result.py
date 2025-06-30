@@ -28,7 +28,7 @@ def loading():
 
     return render_template('loading.html', stage='업로드된 이미지 정합성 체크', redirect_url=url_for('recommend.recommend'))
 
-@result_bp.route('/dress/<path:item>')
+@result_bp.route('/result/<path:item>')
 def result(item):
     if 'user' not in session:
         flash("로그인 후 이용해주세요.")
@@ -37,11 +37,22 @@ def result(item):
     photo_path = session.get('photo_path')
     if not photo_path:
         return redirect(url_for('upload.upload'))
+    
+    if photo_path.startswith('/'):
+        from pathlib import Path
+        photo_path = 'static/' + Path(photo_path).as_posix().split('static/')[-1]
 
+    # return render_template(
+    #     'result.html',
+    #     result=photo_path,
+    #     item=item,
+    #     user=session.get('user'),
+    #     previous=url_for('recommend.recommend')
+    # )
     return render_template(
         'result.html',
-        result=photo_path,
-        item=item,
+        result='/' + photo_path,  # URL에 / 붙이기
+        item='/' + item,
         user=session.get('user'),
         previous=url_for('recommend.recommend')
     )

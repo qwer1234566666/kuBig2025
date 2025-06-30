@@ -92,11 +92,20 @@ def recommend():
         if not selected_item:
             return "옷이 선택되지 않았습니다", 400
 
-        session['selected_item'] = selected_item
+        selected_item = selected_item.lstrip('/')
+
+        # ⚠️ 테스트용: 모델 동작 대신 5초 후 결과로 이동
+        # 실제 모델 로직이 완성되면 아래 코드를 제거하고 모델 처리로 교체하세요.
         return render_template(
             'loading.html',
-            stage='가상 피팅'
+            stage='가상 피팅 테스트',
+            redirect_url=url_for('result.result', item=selected_item)
         )
+        # session['selected_item'] = selected_item
+        # return render_template(
+        #     'loading.html',
+        #     stage='가상 피팅'
+        # )
 
     photo_path = session.get('photo_path')
     if not photo_path:

@@ -1,0 +1,162 @@
+/* Reset & Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow: hidden;
+}
+
+/* Hero Background */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 중앙에 있는 문구를 왼쪽 중앙으로 이동 */ 
+.main-page .hero-content {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0;   /* 처음엔 투명 */
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 6s;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+/* 배경 레이어 */
+.main-page .background-layer {
+  position: absolute;
+  inset: 0;
+  background-image: url('/static/images/istockphoto-1044295184-612x612.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
+  z-index: 0;
+}
+
+/* 인물 이미지 */
+.main-page .person-image {
+  position: absolute;
+  top: 50%;
+  left: 5%;               /* 오른쪽 여백 */
+  transform: translateY(-50%);
+  max-height: 90vh;       /* 브라우저 창 높이에 맞게 자동 조정 */
+  opacity: 0;
+  animation: slideFadeInRight 1s ease forwards;
+  animation-delay: 3s;
+  z-index: 1;
+}
+
+/* Top-right layout */
+.main-page .top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+  pointer-events: auto;
+  opacity: 0;                               /* 처음에 안보이게 */
+  animation: fadeIn 1s ease forwards;       /* 서서히 나타나기 */
+  animation-delay: 6s;                      /* 6초 뒤에 등장 */
+}
+
+/* Title */
+.title {
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+/* Buttons */
+button {
+  background-color: #FEE500;
+  color: #3C1E1E;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #e0ca00;
+}
+
+/* Greeting */
+.greeting {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+  z-index: 2;
+}
+
+/* Upload main button */
+.upload-hero-btn {
+  font-size: 1.1rem;
+  padding: 0.9rem 2rem;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  button {  d
+    font-size: 1.1rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .top-right {
+    top: 30px;
+    right: 30px;
+  }
+
+  /* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(-50%);
+  }
+}
+}

@@ -1,0 +1,61 @@
+/* Reset & Global */                /* d */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {                        /* d */
+  height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow: hidden;
+}
+
+/* Form containers */               /* d */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 5% auto;
+  padding: 2rem;
+  background-color: #111;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* 입력창 스타일 */                     /* d */
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="email"] {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  background-color: #FEE500;
+  color: #3C1E1E;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #e0ca00;
+}
+
+/* 플래시 메시지 (에러나 알림 메시지) */
+.flash-messages {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
