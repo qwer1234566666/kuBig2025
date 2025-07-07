@@ -1,0 +1,149 @@
+/* Reset & Global (페이지 전체 공통 초기화) */
+.result-page * {  /* 페이지 내 모든 요소 초기화 */
+  margin: 0;      /* 기본 바깥 여백 제거 */
+  padding: 0;     /* 기본 안쪽 여백 제거 */
+  box-sizing: border-box;  /* padding, border 포함한 크기 계산 */
+}
+
+.result-page html,
+.result-page body {  /* 페이지 전체 높이 설정 및 글꼴 적용 */
+  height: 100%;             /* 뷰포트 전체 높이 채우기 */
+  font-family: 'Noto Sans KR', sans-serif;  /* 한글 본문용 폰트 */
+  overflow: hidden;          /* 스크롤바 숨김 */
+}
+
+/* 전체 배경 및 레이아웃 컨테이너 */
+.result-page .hero {  /* 최상위 레이아웃 박스 */
+  position: relative;          /* 내부 absolute 요소 기준점 */
+  width: 100%;                 /* 가로 전체 */
+  height: 100vh;               /* 화면 높이 100% */
+  display: flex;               /* Flexbox 레이아웃 */
+  justify-content: center;     /* 가로축 가운데 정렬 */
+  align-items: center;         /* 세로축 가운데 정렬 */
+}
+
+/* 검정 투명 배경 위에 올릴 요소들 배치용 */
+.result-page .overlay {  
+  position: absolute;          /* .hero 기준 절대 위치 */
+  inset: 0;                    /* top/right/bottom/left 0 */
+  padding: 2rem;               /* 내부 여백 */
+  z-index: 1;                  /* 다른 요소 위에 표시 */
+  display: flex;               /* Flexbox */
+  flex-direction: column;      /* 세로 방향 정렬 */
+  align-items: center;         /* 가로축 중앙 */
+  justify-content: center;     /* 세로축 중앙 */
+}
+
+/* 오른쪽 상단 - 사용자 이름과 로그아웃 버튼 */
+.result-page .top-right {
+  position: absolute;    /* 화면 기준 고정 */
+  top: 23px !important;             /* 상단에서 20px 떨어지게 */
+  right: 30px !important;           /* 우측에서 20px 떨어지게 */
+  display: flex;         /* 수평 정렬 */
+  align-items: center;   /* 수직 가운데 정렬 */
+  gap: 10px;             /* 텍스트와 버튼 사이 여백 */
+  z-index: 10;           /* 다른 요소 위로 */
+}
+
+/* 사용자 이름 텍스트 스타일 */
+.result-page .greeting {
+  font-size: 1.1rem;         /* 글자 크기 */
+  color: rgb(0, 0, 0);     /* 검은색 글자 */
+  z-index: 2;                /* 다른 요소 위 */
+  margin-right: 3px;
+  position: relative;
+  top: 2px;
+}
+
+/* 왼쪽 업로드 안내 박스 */
+.result-page .form-container {
+  align-self: flex-start;      /* 부모 flex 기준 상단 왼쪽 정렬 */
+  margin-left: 5%;             /* 왼쪽 여백 (기존 20% → 5%로 수정) */
+  max-width: 450px;            /* 최대 폭 제한 (기존 1000px → 450px) */
+  pointer-events: auto;        /* 박스 내부 요소 클릭 가능 */
+  background-color: rgba(0, 0, 0, 0.4); /* 반투명 검정 배경 */
+  padding: 2rem;               /* 안쪽 여백 */
+  border-radius: 15px;         /* 모서리 둥글게 */
+}
+
+/* 페이지 타이틀 (ex: "가상 피팅 결과") */
+.result-page .title {
+  font-size: 1.8rem;           /* 글자 크기 */
+  color: black;                /* 글자색 검정 */
+  font-weight: bold;           /* 글자 굵게 */
+  margin-bottom: 1.5rem;       /* 아래 여백 */
+  text-align: center;          /* 가운데 정렬 */
+  z-index: 2;                  /* 위에 표시 */
+  pointer-events: auto;        /* 클릭 가능 */
+}
+
+/* 결과 이미지 및 기타 이미지 스타일 */
+.result-page img {
+  max-width: 100%;             /* 박스 가로 길이 안 넘게 */
+  height: auto;                /* 비율 유지 자동 높이 */
+  border-radius: 10px;         /* 이미지 모서리 둥글게 */
+  margin: 10px 0;              /* 위아래 여백 */
+  z-index: 2;                  /* 다른 요소 위 */
+}
+
+/* 모든 버튼 (업로드, 재업로드, 저장 등) 공통 스타일 */
+.result-page button,
+.result-page .upload-btn,
+.result-page .reupload-btn {
+  background-color: #FEE500;   /* 카카오 노랑색 */
+  color: #3C1E1E;              /* 버튼 글자색 갈색 */
+  border: none;                /* 테두리 제거 */
+  padding: 0.6rem 1.2rem;      /* 내부 여백 */
+  font-size: 1rem;             /* 글자 크기 */
+  font-weight: bold;           /* 글자 굵게 */
+  border-radius: 5px;          /* 모서리 둥글게 */
+  cursor: pointer;             /* 마우스 커서 손 모양 */
+  transition: background 0.2s ease;  /* hover 색 전환 부드럽게 */
+  margin-top: 0.5rem;          /* 위쪽 여백 */
+  width: 100%;                 /* 버튼 폭 100% (박스 가득) */
+}
+
+.result-page .logout-btn {
+  background-color: #FEE500;
+  color: #3C1E1E;
+  border: none;
+  padding: 0.8rem 1.6rem;     /* 업로드 페이지와 동일한 패딩 */
+  font-size: 1.1rem;          /* 글자 크기 */
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* 버튼 hover 시 색상 변화 */
+.result-page button:hover,
+.result-page .upload-btn:hover,
+.result-page .reupload-btn:hover {
+  background-color: #e0ca00;   /* hover 시 더 진한 노랑 */
+}
+
+/* 에러 메시지 (에러 뜰 경우 대비용) */
+.result-page .error {
+  color: #ff6b6b;              /* 빨간색 */
+  font-size: 0.9rem;           /* 작은 글씨 */
+  margin-bottom: 1rem;         /* 아래 여백 */
+}
+
+/* 반응형: 화면 넓어질 때 */
+@media screen and (min-width: 768px) {
+  .result-page .title {
+    font-size: 2.8rem;         /* 큰 화면에서 타이틀 더 큼 */
+  }
+
+  .result-page button,
+  .result-page .upload-btn,
+  .result-page .reupload-btn {
+    font-size: 1.1rem;         /* 버튼 글씨도 더 큼 */
+    padding: 0.8rem 1.6rem;    /* 버튼 내부 여백도 더 큼 */
+  }
+
+  .result-page .top-right {
+    top: 30px;
+    right: 30px;
+  }
+}

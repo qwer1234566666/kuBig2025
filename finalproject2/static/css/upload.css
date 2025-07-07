@@ -1,18 +1,18 @@
 /* Reset & Global */
-* {
+.upload-page * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+.upload-page body {
   height: 100%;
   font-family: 'Noto Sans KR', sans-serif;
   overflow: hidden;
 }
 
-/* Hero Background */
-.hero {
+/* Hero 영역 (가운데 정렬용 큰 컨테이너) */
+.upload-page .hero {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -21,8 +21,8 @@ html, body {
   align-items: center;
 }
 
-/* Overlay for layout */
-.overlay {
+/* Overlay 레이어 (기본 클릭 차단) */
+.upload-page .overlay {
   position: absolute;
   inset: 0;
   padding: 2rem;
@@ -31,42 +31,46 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  pointer-events: none;
+  pointer-events: auto;  /* 기본 클릭 불가 → 아래 박스만 예외로 풀어줌 */
 }
 
-/* Top-right User Info */
-.top-right {
+/* 오른쪽 상단 사용자 정보 & 로그아웃 */
+.upload-page .top-right {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 31px !important;
+  right: 30px !important;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.8rem;
   z-index: 10;
-  pointer-events: auto;
+  pointer-events: auto;  /* 로그인 영역은 클릭 가능 */
 }
 
-/* Greeting */
-.greeting {
+.upload-page .greeting {
   font-size: 1.1rem;
-  color: white;
+  margin-top: 13px;
   margin-bottom: 1rem;
   z-index: 2;
+  position: relative;
+  top: -2px;
 }
 
-/* Upload content left box */
-.left-box {
-  align-self: flex-start;
-  margin-left: 5%;
-  max-width: 450px;
-  pointer-events: auto;
+/* 왼쪽 업로드 박스 (form-container로 이름 통일) */
+.upload-page .form-container {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 2rem;
   border-radius: 15px;
+  max-width: 800px;          /* 원하는 최대 폭 */
+  max-height: 300px;
+  width: 100%;               /* 가로 100% */
+  text-align: left;
+  pointer-events: auto;      /* 클릭 허용 */
+  align-items: flex-start;
 }
 
-.title {
+/* 제목 글씨 */
+.upload-page .title {
   font-size: 1.8rem;
-  color: rgb(0, 0, 0);
+  color: black;
   font-weight: bold;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -74,8 +78,33 @@ html, body {
   pointer-events: auto;
 }
 
-/* Buttons - Upload & Logout */
-button, .upload-btn {
+.upload-page .logout-btn {
+  background-color: #FEE500;
+  color: #3C1E1E;
+  border: none;
+  padding: 0.8rem 1.6rem;     /* 업로드 페이지와 동일한 패딩 */
+  font-size: 1.1rem;          /* 글자 크기 */
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  position: relative;
+  top: 0px;
+}
+
+.upload-page .custom-file-upload {
+  background-color: #FEE500;
+  color: #3C1E1E;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.upload-page .upload-btn {
   background-color: #FEE500;
   color: #3C1E1E;
   border: none;
@@ -87,32 +116,59 @@ button, .upload-btn {
   transition: background 0.2s ease;
 }
 
-button:hover, .upload-btn:hover {
+.upload-page button:hover,
+.upload-page .upload-btn:hover {
   background-color: #e0ca00;
 }
 
-/* File Input Styling */
-input[type="file"] {
-  width: 100%;
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border: none;
-  font-size: 1rem;
+/* 파일 업로드 input 숨기기 */
+.upload-page input[type="file"] {
+  display: none;
 }
 
-/* Responsive */
+.upload-page .custom-file-upload:hover {
+  background-color: #e0ca00;
+}
+
+/* 선택한 파일 이름 뜨는 안내문구 */
+.upload-page .upload-guide {
+  margin-left: 1rem;
+  color: white;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+/* 반응형: 큰 화면일 때 */
 @media screen and (min-width: 768px) {
-  .title {
+  .upload-page .title {
     font-size: 2.2rem;
   }
 
-  button, .upload-btn {
+  .upload-page button,
+  .upload-page .upload-btn {
     font-size: 1.1rem;
     padding: 0.8rem 1.6rem;
   }
 
-  .top-right {
+  .upload-page .top-right {
+    top: 30px;
+    right: 30px;
+  }
+}
+
+/* 반응형: 중간 모바일 화면일 때 */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .upload-page .title {
+    font-size: 2.2rem;
+  }
+
+  .upload-page button,
+  .upload-page .upload-btn {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .upload-page .top-right {
     top: 30px;
     right: 30px;
   }

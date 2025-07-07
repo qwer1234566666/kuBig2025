@@ -46,6 +46,7 @@
   <meta charset="UTF-8">
   <title>로딩 중...</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/loading.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
   <script>
     async function checkStatus() {
       try {
@@ -80,11 +81,12 @@
     };
   </script>
 </head>
-<body>
+<body class="loading-page form-container background">
   <div class="loading-message">
+    <img src="{{ url_for('static', filename='images/loading.gif') }}" alt="Loading..." class="loading-icon">
     {{ stage }} 중 입니다
   </div>
-  <div class="sub-message">
+  <div class="sub-message" style="color: rgb(0, 0, 0);">
     ※ 조금 시간이 걸립니다. 기다려주세요.
   </div>
 </body>

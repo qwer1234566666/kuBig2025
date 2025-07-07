@@ -1,17 +1,35 @@
-body {
-  background-color: black;
-  color: white;
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  margin-top: 15%;
+/* 페이지 전체(body) 스타일 */
+.loading-page body {
+  background-color: black;         /* 페이지 배경색: 검정색 */
+  color: white;                    /* 모든 글자색: 흰색 */
+  font-family: 'Arial', sans-serif; /* 글꼴: Arial 또는 기본 sans-serif 계열 */
+  text-align: center;              /* 모든 내용 가운데 정렬 */
+  margin-top: 15%;                 /* 위쪽 여백으로 내용 아래로 내림 (대략 화면 중앙쯤) */
 }
 
-.loading-message {
+/* 메인 로딩 메시지 (예: "업로드된 이미지 적합성 체크 중 입니다") */
+.loading-page .loading-message {
+  font-size: 24px;                 /* 큰 글자 크기 */
+  margin-bottom: 10px;             /* 아래 여백 */
+}
+
+.loading-page .loading-text {
   font-size: 24px;
-  margin-bottom: 10px;
+  color: black;
+  margin-top: -90px;  /* 👈 이 값을 조절해서 위로 올리기 */
+  margin-left: 100px;
 }
 
-.sub-message {
-  font-size: 14px;
-  color: #ccc;
+/* 서브 메시지 (예: "※ 조금 시간이 걸립니다...") */
+.loading-page .sub-message {
+  font-size: 14px;                 /* 작은 글자 크기 */
+  color: #ccc;                     /* 옅은 회색 글자색 */
+  margin-right: 50px;
+}
+
+.loading-page .loading-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;       /* 이미지가 정사각형 안에 꽉 차도록 자름 */
+  border-radius: 10px;     /* 원하면 살짝 둥글게 */
 }

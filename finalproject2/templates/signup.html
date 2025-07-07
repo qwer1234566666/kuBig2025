@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>회원가입</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
   <script>
     function checkUsername() {
       const username = document.getElementById("username").value;
@@ -52,7 +53,7 @@
     });
   </script>
 </head>
-<body class="signup-page">
+<body class="signup-page form-container background">
   <div class="form-container">
     <h2>회원가입</h2>
 

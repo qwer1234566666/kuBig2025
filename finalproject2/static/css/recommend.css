@@ -1,56 +1,113 @@
-.recommend-section {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  justify-content: center;
+/* 추천 이미지들 가로 정렬 영역 */
+.recommend-page .recommend-section {
+  display: flex;                /* Flexbox로 가로 정렬 */
+  gap: 30px;                    /* 박스들 사이 간격 30px */
+  align-items: flex-start;      /* 이미지 박스 위쪽 정렬 */
+  justify-content: center;      /* 전체 가운데 정렬 */
 }
 
-.image-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* 각각의 이미지 박스 (원본/크롭) */
+.recommend-page .image-box {
+  display: flex;                /* Flexbox */
+  flex-direction: column;       /* 세로로 쌓기 */
+  align-items: center;          /* 가로 중앙 정렬 */
 }
 
-.cropped-img {
-  border: 2px solid white;
-  margin-top: 10px;
+/* 검출된 상반신 이미지 */
+.recommend-page .cropped-img {
+  border: 2px solid white;      /* 흰색 테두리 2px */
+  margin-top: 10px;             /* 위 이미지랑 간격 */
 }
 
-.original-img {
-  border: 1px solid #ddd;
-  margin-top: 10px;
-  width: 120px;
+/* 원본 이미지 */
+.recommend-page .original-img {
+  border: 1px solid #ddd;       /* 옅은 회색 테두리 */
+  margin-top: 10px;             /* 위 간격 */
+  width: 120px;                 /* 이미지 폭 고정 */
 }
 
-/* 새로 추가된 스타일 */
-.greeting,
-.cropped-img-label,
-.original-img-label,
-.item-name,
-.no-recommend-msg {
-  color: white;
+/* 사용자 닉네임 인사말 / 이미지 라벨 / 아이템 이름 / 추천없음 메시지 */
+.recommend-page .cropped-img-label,
+.recommend-page .original-img-label,
+.recommend-page .item-name,
+.recommend-page .no-recommend-msg {
+  color: black;                 /* 흰색 글자 */
 }
 
-.cropped-img-label,
-.original-img-label {
-  font-size: 14px;
+.recommend-page .greeting {
+  font-size: 1.1rem;         /* 글자 크기 */
+  color: rgb(0, 0, 0);     /* 검은색 글자 */
+  z-index: 2;                /* 다른 요소 위 */
+  margin-right: 3px;
+  position: relative;
+  top: -10px;
 }
 
-.no-recommend-tips {
-  color: lightgray;
-  font-size: 12px;
+/* 크롭/원본 이미지 라벨 크기 */
+.recommend-page .cropped-img-label,
+.recommend-page .original-img-label {
+  font-size: 14px;              /* 작은 글자 크기 */
 }
 
-.recommend-form {
-  margin-top: 30px;
+/* 추천 실패시 나오는 안내 문구들 */
+.recommend-page .no-recommend-tips {
+  color: lightgray;             /* 옅은 회색 글자 */
+  font-size: 12px;              /* 글자 작게 */
 }
 
-.clothes-selection {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+
+/* 라디오 버튼 영역 전체 */
+.recommend-page .recommend-form {
+  margin-top: 13x;             /* 위 간격 */
 }
 
-.upload-btn {
-  margin-top: 20px;
+/* 옷 선택 옵션들 */
+.recommend-page .clothes-selection {
+  display: flex;                /* Flexbox로 가로 정렬 */
+  flex-wrap: wrap;              /* 넘치면 줄바꿈 */
+  gap: 20px;                    /* 옷 간격 */
+}
+
+.recommend-page button {
+  background-color: #FEE500; /* 카카오톡 노랑색 느낌 */
+  color: #3C1E1E;            /* 버튼 텍스트 색상 (갈색톤) */
+  border: none;              /* 테두리 제거 */
+  padding: 0.6rem 1.2rem;    /* 버튼 안쪽 여백 */
+  font-size: 1rem;           /* 글자 크기 */
+  font-weight: bold;         /* 글자 굵게 */
+  border-radius: 5px;        /* 모서리 둥글게 */
+  cursor: pointer;           /* 마우스 올리면 손가락 커서 */
+  transition: background 0.2s ease; /* hover 시 부드럽게 색상 전환 */
+  margin-bottom: 1rem;   /* ← 추가: 아래 공백 생성 */
+}
+
+.recommend-page .logout-btn {
+  background-color: #FEE500;
+  color: #3C1E1E;
+  border: none;
+  padding: 0.8rem 1.6rem;     /* 업로드 페이지와 동일한 패딩 */
+  font-size: 1.1rem;          /* 글자 크기 */
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* 버튼 호버 효과(마우스 커서를 버튼 위에 올렸을 때 버튼의 색상, 크기, 테두리, 그림자 등이 바뀌는 **"마우스 오버 효과"**) */
+.recommend-page button:hover {
+  background-color: #e0ca00; /* 더 어두운 노랑색 */
+}
+
+.recommend-page .top-right {
+  position: absolute;    /* 화면 기준 고정 */
+  top: 39px;             /* 상단에서 20px 떨어지게 */
+  right: 38px;           /* 우측에서 20px 떨어지게 */
+  display: flex;         /* 수평 정렬 */
+  align-items: center;   /* 수직 가운데 정렬 */
+  gap: 10px;             /* 텍스트와 버튼 사이 여백 */
+  z-index: 10;           /* 다른 요소 위로 */
+}
+
+.recommend-page .upload-btn {
+  margin-top: 20px;             /* 위쪽 여백 */
 }

@@ -1,162 +1,181 @@
 /* Reset & Global */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.main-page * {
+  margin: 0;                /* 모든 요소의 기본 margin 제거 */
+  padding: 0;               /* 모든 요소의 기본 padding 제거 */
+  box-sizing: border-box;   /* 요소의 크기 계산에 border와 padding 포함 (박스 크기 쉽게 맞추기 위함) */
 }
 
-html, body {
-  height: 100%;
-  font-family: 'Noto Sans KR', sans-serif;
-  overflow: hidden;
-}
-
-/* Hero Background */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+.main-page html, 
+.main-page body {
+  height: 100%;             /* 브라우저 창 전체 높이 사용 */
+  font-family: 'Noto Sans KR', sans-serif;  /* 웹 폰트 적용 */
+  overflow: hidden;          /* 스크롤바 숨기기 (화면 넘침 방지) */
+  background-color: black; /* 배경색을 검정으로 설정 */
+  color: white; /* 텍스트 색을 흰색으로 설정 */
+  font-family: 'Times New Roman', Times, serif; /* 클래식한 느낌을 주는 글꼴 설정 */
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+/* Hero Background */
+.main-page .hero {
+  position: relative;        /* 내부 요소의 절대 위치 기준점 */
+  width: 100%;               /* 전체 너비 */
+  height: 100vh;             /* 브라우저 한 화면 꽉 채우기 */
+  display: flex;             /* Flexbox 사용해서 가운데 정렬 */
+  justify-content: center;   /* 가로 중앙 정렬 */
+  align-items: center;       /* 세로 중앙 정렬 */
 }
 
 /* 중앙에 있는 문구를 왼쪽 중앙으로 이동 */ 
 .main-page .hero-content {
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  transform: translateY(-50%);
-  z-index: 2;
-  opacity: 0;   /* 처음엔 투명 */
-  animation: fadeIn 1s ease forwards;
-  animation-delay: 6s;
-  text-align: left;
-  color: rgb(0, 0, 0);
+  position: absolute;        /* 부모(.hero)를 기준으로 절대 위치 */
+  top: 50%;                  /* 세로 중앙 */
+  right: 10%;                /* 오른쪽에서 10% 여백 */
+  transform: translateY(-50%); /* 세로 중앙 정렬을 위한 보정 */
+  z-index: 2;                /* 배경, 이미지 위에 표시 */
+  opacity: 0;                /* 처음엔 투명 */
+  animation: fadeIn 1s ease forwards; /* 서서히 나타나는 애니메이션 */
+  animation-delay: 3s;       /* 3초 후 시작 */
+  text-align: left;          /* 텍스트 왼쪽 정렬 */
+  color: rgb(0, 0, 0);       /* 텍스트 색상: 검정 */
+}
+
+.main-page .hero-content p{
+  margin-bottom: 5%;
 }
 
 /* 배경 레이어 */
 .main-page .background-layer {
-  position: absolute;
-  inset: 0;
-  background-image: url('/static/images/istockphoto-1044295184-612x612.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
-  animation-delay: 1s;
-  z-index: 0;
+  position: absolute;        /* 부모(.hero)를 기준으로 덮기 */
+  inset: 0;                  /* top, right, bottom, left 모두 0 (영역 가득 채우기) */
+  background-image: url('/static/images/istockphoto-1044295184-612x612.jpg'); /* 배경 이미지 */
+  background-size: cover;    /* 이미지가 영역을 꽉 채우도록 비율 맞추기 */
+  background-position: center; /* 중앙 위치 */
+  opacity: 0;                /* 처음엔 투명 */
+  animation: fadeIn 1s ease forwards; /* 서서히 나타남 */
+  animation-delay: 1s;       /* 1초 뒤부터 시작 */
+  z-index: 0;                /* 맨 뒤로 보내기 */
 }
 
 /* 인물 이미지 */
 .main-page .person-image {
-  position: absolute;
-  top: 50%;
-  left: 5%;               /* 오른쪽 여백 */
-  transform: translateY(-50%);
-  max-height: 90vh;       /* 브라우저 창 높이에 맞게 자동 조정 */
-  opacity: 0;
-  animation: slideFadeInRight 1s ease forwards;
-  animation-delay: 3s;
-  z-index: 1;
+  position: absolute;        /* 부모(.hero)를 기준으로 절대 위치 */
+  top: 50%;                  /* 세로 중앙 */
+  left: 5%;                  /* 왼쪽에서 5% 여백 */
+  transform: translateY(-50%); /* 수직 중앙 정렬 */
+  max-height: none;          /* 높이 제한 없애기 */
+  opacity: 0;                /* 처음엔 투명 */
+  animation: slideFadeInRight 1s ease forwards; /* 오른쪽에서 슬라이드하며 나타남 */
+  animation-delay: 2s;       /* 2초 후 애니메이션 시작 */
+  z-index: 1;                /* 배경 위, 버튼보다 아래 */
+  width: 25%;                /* 전체 너비의 25%로 강제 비율 조절 */
 }
 
-/* Top-right layout */
+/* 타이틀 문구 */
+.main-page .title {
+  font-size: 2.2rem;          /* 글자 크기: 2.2rem (대략 35px 정도, 꽤 크게 보임) */
+  color: rgb(0, 0, 0);         /* 글자색: 검정색 (RGB로 표현) */
+  font-weight: bold;           /* 글자 굵게 (볼드체) */
+  margin-bottom: 1.5rem;       /* 아래 여백: 1.5rem (다음 요소와 간격) */
+  text-align: center;          /* 텍스트 가운데 정렬 */
+  z-index: 2;                  /* 레이어 우선순위: 배경보다 위에 표시됨 */
+  pointer-events: auto;        /* 마우스 클릭이나 포커스 등 이벤트 허용 (기본값이지만 명시적으로 설정) */
+}
+
 .main-page .top-right {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  gap: 0.5rem;
-  z-index: 10;
-  pointer-events: auto;
-  opacity: 0;                               /* 처음에 안보이게 */
-  animation: fadeIn 1s ease forwards;       /* 서서히 나타나기 */
-  animation-delay: 6s;                      /* 6초 뒤에 등장 */
+  position: absolute;        /* 화면의 절대 위치 */
+  top: 20px;                 /* 위쪽에서 20px 여백 */
+  right: 20px;               /* 오른쪽에서 20px 여백 */
+  display: flex;             /* 버튼들 가로 정렬 */
+  gap: 0.8rem;               /* 버튼 사이 간격 */
+  z-index: 10;               /* 다른 요소보다 위에 표시 */
+  pointer-events: auto;      /* 마우스 클릭 허용 */
+  opacity: 0;                /* 처음엔 투명 */
+  animation: fadeIn 1s ease forwards; /* 서서히 나타남 */
+  animation-delay: 3s;       /* 6초 후에 나타남 */
 }
 
-/* Title */
-.title {
-  font-size: 1.8rem;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  z-index: 2;
-  pointer-events: auto;
+/* 사용자 이름 인사말 영역 */
+.greeting {
+  font-size: 1.1rem;         /* 글자 크기 */
+  color: rgb(0, 0, 0);              /* 검은색 글자 */
+  margin-bottom: 1rem;       /* 아래 여백 */
+  z-index: 2;                /* 다른 요소 위 */
+  line-height: 3.2rem;
+}
+
+/* 이미지 기본 스타일 */
+.main-page img {
+  max-width: 100%;           /* 부모 너비에 맞게 크기 조절 */
+  height: auto;              /* 비율 유지 */
+  border-radius: 10px;       /* 모서리 둥글게 */
+  margin: 10px 0;            /* 위아래 여백 */
+  z-index: 2;                /* 위쪽 표시 */
 }
 
 /* Buttons */
-button {
-  background-color: #FEE500;
-  color: #3C1E1E;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.2s ease;
+.main-page button {
+  background-color: #FEE500; /* 카카오톡 노랑색 느낌 */
+  color: #3C1E1E;            /* 버튼 텍스트 색상 (갈색톤) */
+  border: none;              /* 테두리 제거 */
+  padding: 0.6rem 1.2rem;    /* 버튼 안쪽 여백 */
+  font-size: 1rem;           /* 글자 크기 */
+  font-weight: bold;         /* 글자 굵게 */
+  border-radius: 5px;        /* 모서리 둥글게 */
+  cursor: pointer;           /* 마우스 올리면 손가락 커서 */
+  transition: background 0.2s ease; /* hover 시 부드럽게 색상 전환 */
+  position: relative;
+  top: 2px;
 }
 
-button:hover {
-  background-color: #e0ca00;
+/* 버튼 호버 효과(마우스 커서를 버튼 위에 올렸을 때 버튼의 색상, 크기, 테두리, 그림자 등이 바뀌는 **"마우스 오버 효과"**) */
+.main-page button:hover {
+  background-color: #e0ca00; /* 더 어두운 노랑색 */
 }
 
-/* Greeting */
-.greeting {
-  font-size: 1.1rem;
-  color: white;
-  margin-bottom: 1rem;
-  z-index: 2;
+/* 업로드 버튼 특별 스타일 */
+.main-page .upload-hero-btn {
+  font-size: 1.1rem;         /* 버튼 글자 크기 */
+  padding: 0.9rem 2rem;      /* 넓은 버튼 패딩 */
 }
 
-/* Image styling */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin: 10px 0;
-  z-index: 2;
-}
+/* 반응형 (화면 넓을 때 크기 변경) */
+@media screen and (min-width: 768px) {/* 화면 폭 768px 이상일 때만 적용 */
 
-/* Upload main button */
-.upload-hero-btn {
-  font-size: 1.1rem;
-  padding: 0.9rem 2rem;
-}
-
-/* Responsive */
-@media screen and (min-width: 768px) {
-  .title {
-    font-size: 2.2rem;
+  .main-page .title {
+    font-size: 3.5rem;       /* 타이틀 더 크게 */
   }
 
-  button {  d
-    font-size: 1.1rem;
-    padding: 0.8rem 1.6rem;
+   .main-page button {  
+    font-size: 1.1rem;       /* 버튼 글자 크기 증가 */
+    padding: 0.8rem 1.6rem;  /* 버튼 안쪽 여백 증가 */
   }
 
-  .top-right {
-    top: 30px;
-    right: 30px;
+  .main-page .top-right {
+    top: 30px;               /* 더 위로 */
+    right: 30px;             /* 오른쪽 여백도 증가 */
   }
-
-  /* Fade-in animation */
+}
+/* 서서히 나타나는 애니메이션 */
 @keyframes fadeIn {
   to {
-    opacity: 1;
+    opacity: 1;              /* 투명도 1로 변경 (점점 선명하게) */
   }
 }
 
+/* 오른쪽에서 슬라이드 등장 애니메이션 */
 @keyframes slideFadeInRight {
   0% {
-    opacity: 0;
-    transform: translateX(50px) translateY(-50%);
+    opacity: 0;              /* 시작은 투명 */
+    transform: translateX(50px) translateY(-50%); /* 오른쪽에서 시작 + 세로 중앙 보정 */
   }
   100% {
-    opacity: 1;
-    transform: translateX(0) translateY(-50%);
+    opacity: 1;              /* 완전히 보이게 */
+    transform: translateX(0) translateY(-50%); /* 원래 자리로 이동 */
   }
-}
 }

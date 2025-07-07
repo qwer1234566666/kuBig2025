@@ -3,30 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>사진 업로드</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+  <style>
+    /* 선택된 파일 이름 표시용 */
+    .upload-page .upload-guide {
+      margin-left: 1rem;
+      color: white;
+      font-size: 0.95rem;
+      vertical-align: middle;
+    }
+  </style>
 </head>
-<body>
+<body class="upload-page form-container background">
   <div class="hero">
     <div class="overlay">
-      <!-- 상단 우측 사용자 정보 -->
+      
+      <!-- 오른쪽 상단 닉네임 + 로그아웃 -->
       {% if user %}
         <div class="top-right">
-          <span class="greeting" style="color: white;">{{ user.nickname }} 님</span>
+          <span class="greeting">{{ user.nickname }} 님</span>
           <form action="{{ url_for('index.logout') }}" method="get" style="display:inline;">
             <button type="submit" class="logout-btn">로그아웃</button>
           </form>
         </div>
       {% endif %}
 
-      <!-- 왼쪽 정렬된 업로드 안내 및 폼 -->
-      <div class="left-box">
+      <!-- 가운데 업로드 박스 -->
+      <div class="form-container">
         <h2 class="title" style="text-align: left;">사진을 업로드해 스타일을 추천받으세요</h2>
+
         <form method="post" enctype="multipart/form-data" style="text-align: left;">
-          <input type="file" name="photo" accept="image/*" required style="margin-bottom: 10px;"><br>
+          <!-- 파일 선택 버튼 -->
+          <label for="file-upload" class="custom-file-upload">파일 선택</label>
+          <span id="file-name" class="upload-guide">사진을 업로드해 스타일을 추천받으세요</span><br>
+
+          <!-- 실제 파일 input (숨김처리됨) -->
+          <input id="file-upload" type="file" name="photo" accept="image/*" required>
+
+          <!-- 업로드 버튼 -->
           <input type="submit" value="업로드" class="upload-btn">
         </form>
       </div>
+
     </div>
   </div>
+
+  <!-- 파일 선택 시 이름 변경 스크립트 -->
+  <script>
+    const fileInput = document.getElementById('file-upload');
+    const fileNameSpan = document.getElementById('file-name');
+
+    fileInput.addEventListener('change', function() {
+      if (fileInput.files.length > 0) {
+        fileNameSpan.textContent = fileInput.files[0].name;
+      } else {
+        fileNameSpan.textContent = '사진을 업로드해 스타일을 추천받으세요';
+      }
+    });
+  </script>
 </body>
 </html>

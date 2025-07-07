@@ -1,53 +1,65 @@
-/* Reset & Global */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Reset & Global (기본 초기화) */
+.reset-verify-page * {
+  margin: 0;                /* 모든 요소의 기본 바깥 여백 제거 */
+  padding: 0;               /* 모든 요소의 기본 안쪽 여백 제거 */
+  box-sizing: border-box;   /* 요소 크기 계산 시 padding, border 포함 */
 }
 
-html, body {
-  height: 100%;
-  font-family: 'Noto Sans KR', sans-serif;
-  overflow: hidden;
+.reset-verify-page html,
+.reset-verify-page body {
+  height: 100%;             /* 브라우저 전체 높이 사용 */
+  font-family: 'Noto Sans KR', sans-serif;  /* 한글 웹폰트 적용 */
+  overflow: hidden;          /* 스크롤바 숨김 (넘침 방지) */
 }
 
-/* Form containers */
-.form-container {
-  width: 100%;
+/* 폼 컨테이너 박스 */
+.reset-verify-page .form-container {
+  width: 100%;                       /* 모바일에서는 가로 100% */
+  margin: 5% auto;                   /* 위에서 5% 여백 + 좌우 가운데 정렬 */
+  padding: 2rem;                     /* 내부 여백 */
+  border-radius: 10px;               /* 모서리 둥글게 */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* 연한 테두리 그림자 효과 */
   max-width: 400px;
-  margin: 5% auto;
-  padding: 2rem;
-  background-color: #111;
-  border-radius: 10px;
-  color: white;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  max-height: 550px;
 }
 
-input[type="text"] {
-  width: 100%;
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border: none;
-  font-size: 1rem;
+/* 인증코드 입력창 스타일 */
+.reset-verify-page input[type="text"] {
+  width: 100%;                       /* 가로 전체 */
+  padding: 0.7rem;                   /* 안쪽 여백 */
+  margin-bottom: 1rem;               /* 아래 여백 */
+  border-radius: 5px;                /* 둥근 모서리 */
+  border: none;                      /* 테두리 없음 */
+  font-size: 1rem;                   /* 글자 크기 */
 }
 
-/* Buttons */
-button {
-  background-color: #FEE500;
-  color: #3C1E1E;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.2s ease;
+.reset-verify-page h2 {
+  margin-bottom: 1rem;  /* 문구와 입력창 사이에 공간 생성 */
+  text-align: center;   /* 필요시 가운데 정렬 */
+  font-size: 2rem;
+}
+
+/* 버튼 스타일 (다음 버튼) */
+.reset-verify-page button {
+  background-color: #FEE500;          /* 노란색 배경 (카카오 느낌) */
+  color: #3C1E1E;                    /* 갈색 글자 */
+  border: none;                      /* 테두리 없음 */
+  padding: 0.6rem 1.2rem;            /* 안쪽 여백 */
+  font-size: 1rem;                   /* 글자 크기 */
+  font-weight: bold;                 /* 글자 굵게 */
+  border-radius: 5px;                /* 모서리 둥글게 */
+  cursor: pointer;                   /* 마우스 커서 손가락 모양 */
+  transition: background 0.2s ease;  /* hover 시 부드럽게 색 변화 */
+}
+
+/* 버튼 hover 효과(마우스 커서를 버튼 위에 올렸을 때 버튼의 색상, 크기, 테두리, 그림자 등이 바뀌는 **"마우스 오버 효과"**) */
+.reset-verify-page button:hover {
+  background-color: #e0ca00;          /* 더 진한 노랑색 */
 }
 
 /* 플래시 메시지 (에러나 알림 메시지) */
-.flash-messages {
-  color: #ff6b6b;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+.reset-verify-page .flash-messages {
+  color: #ff6b6b;                    /* 빨간색 계열 (에러 표시용) */
+  font-size: 0.9rem;                 /* 글자 약간 작게 */
+  margin-bottom: 1rem;               /* 아래 여백 */
 }

@@ -1,61 +1,68 @@
-/* Reset & Global */                /* d */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Reset & Global (전체 초기화) */
+.reset-request-page * {
+  margin: 0;                /* 모든 요소의 바깥 여백 제거 */
+  padding: 0;               /* 모든 요소의 안쪽 여백 제거 */
+  box-sizing: border-box;   /* padding, border 포함해서 너비 계산 */
 }
 
-html, body {                        /* d */
-  height: 100%;
-  font-family: 'Noto Sans KR', sans-serif;
-  overflow: hidden;
+.reset-request-page html,
+.reset-request-page body {
+  height: 100%;             /* 브라우저 화면 전체 높이 사용 */
+  font-family: 'Noto Sans KR', sans-serif;  /* 한글 웹폰트 적용 */
+  overflow: hidden;          /* 스크롤바 숨김 (화면 넘침 방지) */
 }
 
-/* Form containers */               /* d */
-.form-container {
-  width: 100%;
+/* 폼 컨테이너 영역 (중앙 박스) */
+.reset-request-page .form-container {
+  width: 100%;                       /* 모바일에서는 가로 100% */
+  margin: 5% auto;                   /* 위쪽 5% 여백 + 좌우 자동 가운데 정렬 */
+  padding: 2rem;                     /* 박스 내부 여백 */
+  border-radius: 10px;               /* 모서리 둥글게 */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* 옅은 흰색 테두리 그림자 */
   max-width: 400px;
-  margin: 5% auto;
-  padding: 2rem;
-  background-color: #111;
-  border-radius: 10px;
-  color: white;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  max-height: 550px;
 }
 
-/* 입력창 스타일 */                     /* d */
-input[type="text"],
-input[type="password"],
-input[type="file"],
-input[type="email"] {
-  width: 100%;
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border: none;
-  font-size: 1rem;
+.reset-request-page h2 {
+  margin-bottom: 2rem; /* 또는 16px, 원하는 만큼 조절 가능 */
+  text-align: center;  /* 필요 시 가운데 정렬 */
+  font-size: 2rem;
 }
 
-/* Buttons */
-button {
-  background-color: #FEE500;
-  color: #3C1E1E;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.2s ease;
+/* 입력창 스타일 (아이디 / 이름 / 이메일 입력창) */
+.reset-request-page input[type="text"],
+.reset-request-page input[type="password"],
+.reset-request-page input[type="file"],
+.reset-request-page input[type="email"] {
+  width: 100%;                       /* 가로 전체 */
+  padding: 0.7rem;                   /* 입력창 내부 여백 */
+  margin-bottom: 1rem;               /* 아래 여백 */
+  border-radius: 5px;                /* 둥근 모서리 */
+  border: none;                      /* 테두리 없음 */
+  font-size: 1rem;                   /* 글자 크기 */
 }
 
-button:hover {
-  background-color: #e0ca00;
+/* 버튼 스타일 (인증코드 받기 버튼) */
+.reset-request-page button {
+  background-color: #FEE500;          /* 노란색 배경 (카카오 스타일) */
+  color: #3C1E1E;                    /* 갈색 글자색 */
+  border: none;                      /* 테두리 없음 */
+  padding: 0.6rem 1.2rem;            /* 안쪽 여백 */
+  font-size: 1rem;                   /* 글자 크기 */
+  font-weight: bold;                 /* 글자 굵게 */
+  border-radius: 5px;                /* 모서리 둥글게 */
+  cursor: pointer;                   /* 마우스 올리면 손가락 커서 */
+  transition: background 0.2s ease;  /* hover 시 부드럽게 색 변화 */
+}
+
+/* 버튼 hover 효과(마우스 커서를 버튼 위에 올렸을 때 버튼의 색상, 크기, 테두리, 그림자 등이 바뀌는 **"마우스 오버 효과"**) */
+.reset-request-page button:hover {
+  background-color: #e0ca00;          /* hover 시 더 진한 노랑색 */
 }
 
 /* 플래시 메시지 (에러나 알림 메시지) */
-.flash-messages {
-  color: #ff6b6b;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+.reset-request-page .flash-messages {
+  color: #ff6b6b;                    /* 빨간 계열 색상 (경고, 에러용) */
+  font-size: 0.9rem;                 /* 글자 조금 작게 */
+  margin-bottom: 1rem;               /* 아래 여백 */
 }
