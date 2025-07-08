@@ -84,7 +84,7 @@
 <body class="loading-page form-container background">
   <div class="loading-message">
     <img src="{{ url_for('static', filename='images/loading.gif') }}" alt="Loading..." class="loading-icon">
-    {{ stage }} 중 입니다
+    <div class="loading-text">{{ stage }} 중 입니다</div>
   </div>
   <div class="sub-message" style="color: rgb(0, 0, 0);">
     ※ 조금 시간이 걸립니다. 기다려주세요.

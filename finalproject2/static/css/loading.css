@@ -24,7 +24,8 @@
 .loading-page .sub-message {
   font-size: 14px;                 /* 작은 글자 크기 */
   color: #ccc;                     /* 옅은 회색 글자색 */
-  margin-right: 50px;
+  /* margin-right: 50px; */
+  margin-left: 100px;
 }
 
 .loading-page .loading-icon {
