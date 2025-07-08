@@ -8,13 +8,13 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/yjh/kubig2025/src",
+                "/home/yjh/kuBig2025/src",
                 ""
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/yjh/kubig2025/src",
+                    "/home/yjh/kuBig2025/src",
                     ""
                 ]
             },

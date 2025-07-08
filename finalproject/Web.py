@@ -1,4 +1,3 @@
-# 12345
 # Web.py
 from flask import Flask, render_template, request, redirect, session, url_for, make_response
 from werkzeug.utils import secure_filename
