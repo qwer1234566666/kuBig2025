@@ -114,7 +114,9 @@ def recommend():
     items = [
         {"name": "블레이저", "image": "/static/clothes/blazer.png"},
         {"name": "셔츠", "image": "/static/clothes/shirt.png"},
-        {"name": "가디간", "image": "/static/clothes/cardigan.png"}
+        {"name": "맨투맨", "image": "/static/clothes/mtm.png"},
+        {"name": "파란반팔", "image": "/static/clothes/blue_shirt.png"},
+        {"name": "빨간반팔", "image": "/static/clothes/red_shirt.png"}
     ]
 
     return render_template(
