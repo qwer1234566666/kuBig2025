@@ -4,7 +4,7 @@
   flex-direction: column;            /* 세로 방향 정렬 */
   justify-content: center;           /* 세로축 중앙 */
   align-items: center;               /* 가로축 중앙 */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(58, 58, 58, 0.308);
   color: black;                       /* 글자색 검정 */
 }
 .background {

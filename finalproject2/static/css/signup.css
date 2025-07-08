@@ -20,7 +20,7 @@
   max-height: 550px;
   padding: 2rem;                     /* 내부 여백 */
   border-radius: 10px;               /* 둥근 모서리 */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* 연한 테두리 그림자 */
+  box-shadow: 0 0 10px rgba(189, 183, 183, 0.514); /* 연한 테두리 그림자 */
   text-align: center;                /* 안쪽 내용 가운데 정렬 */
 }
 
@@ -108,7 +108,7 @@
 
 /* 플래시 메시지 (에러 알림 메시지) */
 .signup-page .flash-messages li {
-  color: red;                        /* 글자 빨강색 */
+  color: rgb(243, 154, 154);                        /* 글자 빨강색 */
   font-size: 0.9rem;                 /* 글자 약간 작게 */
   margin-bottom: 0.5rem;             /* 아래 여백 */
 }
