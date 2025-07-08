@@ -76,6 +76,7 @@
   color: red;                        /* 빨간 글자 */
   font-size: 0.9rem;                 /* 조금 작은 글자 크기 */
   margin-bottom: 0.5rem;             /* 아래 여백 */
+  font-weight: bold;
 }
 
 /* 반응형 (화면 넓을 때 버튼 크기 키우기) */

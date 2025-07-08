@@ -62,4 +62,5 @@
   color: #ff6b6b;                    /* 빨간색 계열 (에러 표시용) */
   font-size: 0.9rem;                 /* 글자 약간 작게 */
   margin-bottom: 1rem;               /* 아래 여백 */
+  font-weight: bold;
 }
